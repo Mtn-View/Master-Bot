@@ -31,7 +31,6 @@ module.exports = {
 		  .addStringOption(option => option.setName('title').setDescription("The song's title").setRequired(true)),
   ),
   async execute(interaction) {
-	  console.log(interaction.options)
 	const subcommand = interaction.options.getSubcommand()
 	if(subcommand === 'play'){
 		await startMusicTrivia(interaction)
@@ -49,12 +48,10 @@ async function addSongToList(interaction){
 		singer: interaction.options.getString('artist').toLowerCase(),
 		title: interaction.options.getString('title').toLowerCase()
 	}
-	console.log("Song Array", songArray)
-	console.log("New Song", newSong)
 	songArray.push(newSong)
 	const result = await saveSongArray(songArray)
 	if(result){
-		interaction.followUp({content: `Successfully added song ${newSong.title} - ${newSong.singer} to array, for a total of ${songArray.length} songs.`})
+		interaction.followUp({content: `Successfully added song **${newSong.singer}: ${newSong.title}** to the list, for a total of ${songArray.length} songs.`})
 	} else {
 		interaction.followUp({content: 'CHARLES BROKE THE BOT! IT DIDN\'T WORK!'})
 	}
@@ -123,12 +120,11 @@ function getSongArray() {
 		songJsonPath,
 		'utf8'
 	);
-	const jsonSongsParsed = JSON.parse(jsonSongs)
 	return JSON.parse(jsonSongs).songs;
 }
 
 async function saveSongArray(songArray){
-	await fs.writeFile(songJsonPath, JSON.stringify({songs: songArray}, null, 4), err => {
+	await fs.writeFile(songJsonPath, JSON.stringify({songs: songArray}, null, 2), err => {
 		if (err) {
 			console.error(`Error writing file: ${err}`)
 			return false
