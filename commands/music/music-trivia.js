@@ -46,7 +46,8 @@ async function addSongToList(interaction){
 	const newSong = {
 		url: interaction.options.getString('url'),
 		singer: interaction.options.getString('artist').toLowerCase(),
-		title: interaction.options.getString('title').toLowerCase()
+		title: interaction.options.getString('title').toLowerCase(),
+		addedBy: interaction.user.username,
 	}
 	songArray.push(newSong)
 	const result = await saveSongArray(songArray)
