@@ -4,21 +4,64 @@ const {
   VoiceConnectionStatus,
   entersState
 } = require('@discordjs/voice');
-const { MessageEmbed } = require('discord.js');
+const { MessageEmbed, CommandInteractionOptionResolver } = require('discord.js');
 const fs = require('fs');
 const TriviaPlayer = require('../../utils/music/TriviaPlayer');
 
 module.exports = {
-  data: new SlashCommandBuilder()
-    .setName('music-trivia')
-    .setDescription('Engage in a music quiz with your friends!')
-    .addStringOption(option =>
-      option
-        .setName('length')
-        .setDescription('How many songs would you like the trivia to have?')
-    ),
+  data: 	new SlashCommandBuilder()
+  .setName('music-trivia')
+  .setDescription('Music Trivia')
+  .addSubcommand(subcommand =>
+	  subcommand
+		  .setName('play')
+		  .setDescription('Engage in a music quiz with your friends!')
+		  .addStringOption(option =>
+			  option
+				  .setName('length')
+				  .setDescription('How many songs would you like the trivia to have?'),
+		  ),
+  )
+  .addSubcommand(subcommand =>
+	  subcommand
+		  .setName('add')
+		  .setDescription('Adds a song to the music trivia list.')
+		  .addStringOption(option => option.setName('url').setDescription("The YouTube URL for the song").setRequired(true))
+		  .addStringOption(option => option.setName('artist').setDescription("The song's artist").setRequired(true))
+		  .addStringOption(option => option.setName('title').setDescription("The song's title").setRequired(true)),
+  ),
   async execute(interaction) {
-    await interaction.deferReply();
+	  console.log(interaction.options)
+	const subcommand = interaction.options.getSubcommand()
+	if(subcommand === 'play'){
+		await startMusicTrivia(interaction)
+	} else if (subcommand === 'add'){
+		await addSongToList(interaction)
+	}
+  }
+};
+
+async function addSongToList(interaction){
+	await interaction.deferReply()
+	let songArray = getSongArray()
+	const newSong = {
+		url: interaction.options.getString('url'),
+		singer: interaction.options.getString('artist').toLowerCase(),
+		title: interaction.options.getString('title').toLowerCase()
+	}
+	console.log("Song Array", songArray)
+	console.log("New Song", newSong)
+	songArray.push(newSong)
+	const result = await saveSongArray(songArray)
+	if(result){
+		interaction.followUp({content: `Successfully added song ${newSong.title} - ${newSong.singer} to array, for a total of ${songArray.length} songs.`})
+	} else {
+		interaction.followUp({content: 'CHARLES BROKE THE BOT! IT DIDN\'T WORK!'})
+	}
+}
+
+async function startMusicTrivia(interaction) {
+	await interaction.deferReply();
     const voiceChannel = interaction.member.voice.channel;
     if (!voiceChannel) {
       return interaction.followUp(
@@ -40,11 +83,7 @@ module.exports = {
       ? interaction.options.get('length').value
       : 5;
 
-    const jsonSongs = fs.readFileSync(
-      '././resources/music/musictrivia.json',
-      'utf8'
-    );
-    const videoDataArray = JSON.parse(jsonSongs).songs;
+    const videoDataArray = getSongArray();
     // get random numberOfSongs videos from the array
 
     const randomLinks = getRandom(videoDataArray, numberOfSongs);
@@ -75,8 +114,28 @@ module.exports = {
 
     // play and display embed that says trivia started and how many songs are going to be
     handleSubscription(interaction, triviaPlayer);
-  }
-};
+}
+
+const songJsonPath = '././resources/music/musictrivia.json'
+
+function getSongArray() {
+	const jsonSongs = fs.readFileSync(
+		songJsonPath,
+		'utf8'
+	);
+	const jsonSongsParsed = JSON.parse(jsonSongs)
+	return JSON.parse(jsonSongs).songs;
+}
+
+async function saveSongArray(songArray){
+	await fs.writeFile(songJsonPath, JSON.stringify({songs: songArray}, null, 4), err => {
+		if (err) {
+			console.error(`Error writing file: ${err}`)
+			return false
+		}
+	})
+	return true
+}
 
 async function handleSubscription(interaction, player) {
   const queue = player.queue;
