@@ -42,6 +42,10 @@ module.exports = {
 
 async function addSongToList(interaction){
 	await interaction.deferReply()
+	if(interaction.options.getString('url').contains('playlist')){
+		interaction.followUp({content: 'Adding playlists not supported! *Video* URLs only please!'})
+		return
+	}
 	let songArray = getSongArray()
 	const newSong = {
 		url: interaction.options.getString('url'),
