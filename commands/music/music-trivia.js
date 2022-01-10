@@ -21,6 +21,9 @@ module.exports = {
     await interaction.deferReply();
     const client = interaction.client;
     const voiceChannel = interaction.member.voice.channel;
+    const numberOfSongs = interaction.options.get('length')
+      ? interaction.options.get('length').value
+      : 5;
 
     if (!voiceChannel) {
       return interaction.followUp(
@@ -48,10 +51,10 @@ module.exports = {
 
     const jsonSongs = fs.readFileSync('././utils/trivia/songs.json', 'utf-8');
 
-    const songsArray = getRandom(JSON.parse(jsonSongs), 5);
+    const songsArray = getRandom(JSON.parse(jsonSongs), numberOfSongs);
 
     const tracks = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < numberOfSongs; i++) {
       const result = await client.music.rest.loadTracks(songsArray[i].url);
       tracks.push(result.tracks[0]);
     }
@@ -64,7 +67,7 @@ module.exports = {
       .setColor('#ff7373')
       .setTitle(':notes: Starting Music Quiz!')
       .setDescription(
-        `:notes: Get ready! There are 5 songs, you have 30 seconds to guess either the singer/band or the name of the song. Good luck!
+        `:notes: Get ready! There are **${numberOfSongs}** songs, you have 30 seconds to guess either the singer/band or the name of the song. Good luck!
     Vote skip the song by entering the word 'skip'.
     You can end the trivia at any point by using the end-trivia command!`
       );
