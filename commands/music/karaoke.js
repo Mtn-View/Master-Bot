@@ -1,11 +1,10 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const NowPlayingEmbed = require('../../utils/music/NowPlayingEmbed');
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName('now-playing')
-    .setDescription('Display an embed detailing the song playing'),
-  execute(interaction) {
+    .setName('karaoke')
+    .setDescription('Turn the playing track to karaoke!'),
+  async execute(interaction) {
     const client = interaction.client;
 
     if (client.triviaMap.has(interaction.guildId)) {
@@ -22,16 +21,21 @@ module.exports = {
 
     const voiceChannel = interaction.member.voice.channel;
     if (voiceChannel.id !== player.channelId) {
-      return interaction.reply(
-        'You must be in my channel in order to use that!'
-      );
+      return interaction.reply('Please join my voice channel and try again!');
     }
 
-    const embed = NowPlayingEmbed(
-      player.queue.current,
-      player.accuratePosition,
-      player.queue.current.length
+    player.filters.karaoke = (player.karaoke = !player.karaoke)
+      ? {
+          level: 1,
+          monoLevel: 1,
+          filterBand: 220,
+          filterWidth: 100
+        }
+      : undefined;
+
+    await player.setFilters();
+    return interaction.reply(
+      `Karaoke ${player.bassboost ? 'enabled' : 'disabled'}`
     );
-    return interaction.reply({ embeds: [embed] });
   }
 };

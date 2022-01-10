@@ -1,128 +1,68 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const { MessageEmbed } = require('discord.js');
 const fetch = require('node-fetch');
-const { PagesBuilder } = require('discord.js-pages');
+const { PaginatedMessage } = require('@sapphire/discord.js-utilities');
 
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('tv-show-search')
-    .setDescription('Search for TV shows')
+    .setDescription('Get TV shows information')
     .addStringOption(option =>
       option
-        .setName('tvshow')
-        .setDescription('What TV show are you looking for?')
+        .setName('show-name')
+        .setDescription(
+          'What is the name of the tv show you would like to search?'
+        )
         .setRequired(true)
     ),
   async execute(interaction) {
-    const tvshow = interaction.options.get('tvshow').value;
+    const showName = interaction.options.get('show-name').value;
 
     try {
-      var showResponse = await getShowSearch(tvshow);
-    } catch (e) {
-      return interaction.reply(e);
-    }
-
-    try {
-      const embedArray = [];
-      for (let i = 1; i <= showResponse.length; ++i) {
-        // Filter Thumbnail URL
-        var showThumbnail = showResponse[i - 1].show.image;
-        if (showThumbnail == null)
-          showThumbnail =
-            'https://static.tvmaze.com/images/no-img/no-img-portrait-text.png';
-        else showThumbnail = showResponse[i - 1].show.image.original;
-
-        // Filter Summary Row 1
-        var showSummary = showResponse[i - 1].show.summary;
-        if (showSummary == null) showSummary = 'None listed';
-        else {
-          showSummary = showResponse[i - 1].show.summary
-            .replace(/<(\/)?b>/g, '**')
-            .replace(/<(\/)?i>/g, '*')
-            .replace(/<(\/)?p>/g, '')
-            .replace(/<br>/g, '\n')
-            .replace(/&lt;/g, '<')
-            .replace(/&gt;/g, '>')
-            .replace(/&apos;/g, "'")
-            .replace(/&quot;/g, '"')
-            .replace(/&amp;/g, '&')
-            .replace(/&#39;/g, "'")
-            .toLocaleString();
-        }
-
-        // Filter Language Row 2
-        var showLanguage = showResponse[i - 1].show.language;
-        if (showLanguage === null) showLanguage = 'None listed';
-
-        // Filter Genere Row 2
-        var showGenre = showResponse[i - 1].show.genres;
-        if (showGenre.length == 0) showGenre = 'None listed';
-        if (typeof showGenre === 'object') showGenre = showGenre.join(' ');
-
-        // Filter Types Row 2
-        var showType = showResponse[i - 1].show.type;
-        if (showType === null) showType = 'None listed';
-
-        // Filter Premiered Row 3
-        var showPremiered = showResponse[i - 1].show.premiered;
-        if (showPremiered === null) showPremiered = 'None listed';
-
-        // Filter Network Row 3
-        var showNetwork = showResponse[i - 1].show.network;
-        if (showNetwork === null) showNetwork = 'None listed';
-        else
-          showNetwork = `(**${
-            showResponse[i - 1].show.network.country.code
-          }**) ${showResponse[i - 1].show.network.name}`;
-
-        // Filter Runtime Row 3
-        var showRuntime = showResponse[i - 1].show.runtime;
-        if (showRuntime === null) showRuntime = 'None listed';
-        else showRuntime = showResponse[i - 1].show.runtime + ' Minutes';
-
-        // Filter Ratings Row 4
-        var showRatings = showResponse[i - 1].show.rating.average;
-        if (showRatings === null) showRatings = 'None listed';
-
-        // Build each Tv Shows Embed
-        embedArray.push(
-          new MessageEmbed()
-            .setTitle(showResponse[i - 1].show.name.toLocaleString())
-            .setURL(showResponse[i - 1].show.url)
-            .setThumbnail(showThumbnail)
-            // Row 1
-            .setDescription('**Summary**\n' + showSummary)
-            // Row 2
-            .addField('Language', showLanguage, true)
-            .addField('Genre(s)', showGenre, true)
-            .addField('Show Type', showType, true)
-            // Row 3
-            .addField('Premiered', showPremiered, true)
-            .addField('Network', showNetwork, true)
-            .addField('Runtime', showRuntime, true)
-            // Row 4
-            .addField('Average Rating', showRatings.toString())
-            .setFooter(
-              `(Page ${i}/${showResponse.length}) ` + 'Powered by tvmaze.com',
-              'https://static.tvmaze.com/images/favico/favicon-32x32.png'
-            )
-        );
-      }
-
-      new PagesBuilder(interaction)
-        .setPages(embedArray)
-        .setColor('#17a589')
-        .build();
+      var data = await getData(showName);
     } catch (error) {
-      console.log(error);
-      return interaction.reply(':x: Something went wrong with your request.');
+      return interaction.reply(error);
     }
+
+    const PaginatedEmbed = new PaginatedMessage();
+
+    for (let i = 0; i < data.length; i++) {
+      const showInfo = constructInfoObject(data[i].show);
+      PaginatedEmbed.addPageEmbed(embed =>
+        embed
+          .setTitle(showInfo.name)
+          .setURL(showInfo.url)
+          .setThumbnail(showInfo.thumbnail)
+          .setDescription(showInfo.summary)
+          .addField('Language', showInfo.language, true)
+          .addField('Genre(s)', showInfo.genres, true)
+          .addField('Show Type', showInfo.type, true)
+          .addField('Premiered', showInfo.premiered, true)
+          .addField('Network', showInfo.network, true)
+          .addField('Runtime', showInfo.runtime, true)
+          .addField('Average Rating', showInfo.rating)
+          .setFooter(
+            `(Page ${i}/${data.length}) Powered by tvmaze.com`,
+            'https://static.tvmaze.com/images/favico/favicon-32x32.png'
+          )
+      );
+    }
+
+    const message = {
+      author: {
+        id: interaction.member.id,
+        bot: interaction.user.bot
+      },
+      channel: interaction.channel
+    };
+
+    await interaction.reply('Show info:');
+    PaginatedEmbed.run(message);
   }
 };
 
-async function getShowSearch(showQuery) {
-  return new Promise(async function(resolve, reject) {
-    const url = `http://api.tvmaze.com/search/shows?q=${encodeURI(showQuery)}`;
+function getData(query) {
+  return new Promise(async function (resolve, reject) {
+    const url = `http://api.tvmaze.com/search/shows?q=${encodeURI(query)}`;
     try {
       const body = await fetch(url);
       if (body.status == `429`) {
@@ -152,4 +92,57 @@ async function getShowSearch(showQuery) {
       );
     }
   });
+}
+
+function constructInfoObject(show) {
+  return {
+    name: show.name,
+    url: show.url,
+    summary: filterSummary(show.summary),
+    language: checkIfNull(show.language),
+    genres: checkGenres(show.genres),
+    type: checkIfNull(show.type),
+    premiered: checkIfNull(show.premiered),
+    network: checkNetwork(show.network),
+    runtime: show.runtime ? show.runtime + ' Minutes' : 'None Listed',
+    rating: show.ratings ? show.rating.average : 'None Listed',
+    thumbnail: show.image
+      ? show.image.original
+      : 'https://static.tvmaze.com/images/no-img/no-img-portrait-text.png'
+  };
+}
+
+function filterSummary(summary) {
+  return summary
+    .replace(/<(\/)?b>/g, '**')
+    .replace(/<(\/)?i>/g, '*')
+    .replace(/<(\/)?p>/g, '')
+    .replace(/<br>/g, '\n')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&apos;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&amp;/g, '&')
+    .replace(/&#39;/g, "'");
+}
+
+function checkGenres(genres) {
+  if (typeof genres === 'object') {
+    return genres.join(' ');
+  } else if (!genres.length) {
+    return 'None Listed';
+  }
+  return genres;
+}
+
+function checkIfNull(value) {
+  if (!value) {
+    return 'None Listed';
+  }
+  return value;
+}
+
+function checkNetwork(network) {
+  if (!network) return 'None Listed';
+  return `(**${network.country.code}**) ${network.name}`;
 }

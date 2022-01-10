@@ -1,122 +1,113 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const { MessageEmbed } = require('discord.js');
+const { PaginatedMessage } = require('@sapphire/discord.js-utilities');
 const fetch = require('node-fetch');
-const { PagesBuilder } = require('discord.js-pages');
 const { rawgAPI } = require('../../config.json');
 
-if (!rawgAPI) return;
+if (!rawgAPI) return; // don't load the command if no rawg api key in config.json
 
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('game-search')
-    .setDescription('Search for game information')
+    .setDescription('Search for a video game information')
     .addStringOption(option =>
       option
         .setName('game')
-        .setDescription('What game are you looking for?')
+        .setDescription('What video game are you looking for?')
         .setRequired(true)
     ),
   async execute(interaction) {
-    const gameTitleFiltered = interaction.options
-      .get('game')
-      .value.replace(/ /g, '-')
-      .replace(/'/g, '')
-      .toLowerCase();
+    const title = interaction.options.get('game').value;
+    const filteredTitle = filterTitle(title);
 
-    // using this link it provides all the info, instead of using search
     try {
-      var response = await getGameDetails(gameTitleFiltered);
+      var data = await getGameDetails(filteredTitle);
     } catch (error) {
       return interaction.reply(error);
     }
 
-    let releaseDate;
-    if (response.tba) {
-      releaseDate = 'TBA';
-    } else if (response.released == null) {
-      releaseDate = 'None Listed.';
+    const PaginatedEmbed = new PaginatedMessage();
+
+    const firstPageTuple = []; // releaseDate, esrbRating, userRating
+
+    if (data.tba) {
+      firstPageTuple.push('TBA');
+    } else if (!data.released) {
+      firstPageTuple.push('None Listed');
     } else {
-      releaseDate = response.released;
+      firstPageTuple.push(data.released);
     }
 
-    let esrbRating;
-    if (response.esrb_rating == null) {
-      esrbRating = 'None Listed.';
+    if (!data.esrb_rating) {
+      firstPageTuple.push('None Listed');
     } else {
-      esrbRating = response.esrb_rating.name;
+      firstPageTuple.push(data.esrb_rating.name);
     }
 
-    let userRating;
-    if (response.rating == null) {
-      userRating = 'None Listed.';
+    if (!data.rating) {
+      firstPageTuple.push('None Listed');
     } else {
-      userRating = response.rating + '/5';
+      firstPageTuple.push(data.rating + '/5');
     }
 
-    const embedArray = [
-      // Page 1
-      new MessageEmbed()
+    PaginatedEmbed.addPageEmbed(embed =>
+      embed
         .setDescription(
-          '**Game Description**\n' +
-            response.description_raw.slice(0, 2000) +
-            '...'
+          '**Game Description**\n' + data.description_raw.slice(0, 2000) + '...'
         )
-        .addField('Released', releaseDate, true)
-        .addField('ESRB Rating', esrbRating, true)
-        .addField('Score', userRating, true)
-    ];
+        .addField('Released', firstPageTuple[0], true)
+        .addField('ESRB Rating', firstPageTuple[1], true)
+        .addField('Score', firstPageTuple[2], true)
+    );
 
     const developerArray = [];
-    if (response.developers.length > 0) {
-      for (let i = 0; i < response.developers.length; ++i) {
-        developerArray.push(response.developers[i].name);
+    if (data.developers.length) {
+      for (let i = 0; i < data.developers.length; ++i) {
+        developerArray.push(data.developers[i].name);
       }
     } else {
-      developerArray.push('None Listed.');
+      developerArray.push('None Listed');
     }
 
     const publisherArray = [];
-    if (response.publishers.length > 0) {
-      for (let i = 0; i < response.publishers.length; ++i) {
-        publisherArray.push(response.publishers[i].name);
+    if (data.publishers.length) {
+      for (let i = 0; i < data.publishers.length; ++i) {
+        publisherArray.push(data.publishers[i].name);
       }
     } else {
-      publisherArray.push('None Listed.');
+      publisherArray.push('None Listed');
     }
 
     const platformArray = [];
-    if (response.platforms.length > 0) {
-      for (let i = 0; i < response.platforms.length; ++i) {
-        platformArray.push(response.platforms[i].platform.name);
+    if (data.platforms.length) {
+      for (let i = 0; i < data.platforms.length; ++i) {
+        platformArray.push(data.platforms[i].platform.name);
       }
     } else {
-      platformArray.push('None Listed.');
+      platformArray.push('None Listed');
     }
 
     const genreArray = [];
-    if (response.genres.length > 0) {
-      for (let i = 0; i < response.genres.length; ++i) {
-        genreArray.push(response.genres[i].name);
+    if (data.genres.length) {
+      for (let i = 0; i < data.genres.length; ++i) {
+        genreArray.push(data.genres[i].name);
       }
     } else {
-      genreArray.push('None Listed.');
+      genreArray.push('None Listed');
     }
 
     const retailerArray = [];
-    if (response.stores.length > 0) {
-      for (let i = 0; i < response.stores.length; ++i) {
+    if (data.stores.length) {
+      for (let i = 0; i < data.stores.length; ++i) {
         retailerArray.push(
-          `[${response.stores[i].store.name}](${response.stores[i].url})`
+          `[${data.stores[i].store.name}](${data.stores[i].url})`
         );
       }
     } else {
-      retailerArray.push('None Listed.');
+      retailerArray.push('None Listed');
     }
 
-    embedArray.push(
-      // Page 2
-      new MessageEmbed()
-        // Row 1
+    PaginatedEmbed.addPageEmbed(embed =>
+      embed // Row 1
         .addField(
           'Developer(s)',
           developerArray.toString().replace(/,/g, ', '),
@@ -136,26 +127,29 @@ module.exports = {
         .addField('Genre(s)', genreArray.toString().replace(/,/g, ', '), true)
         .addField(
           'Retailer(s)',
-          retailerArray
-            .toString()
-            .replace(/,/g, ', ')
-            .replace(/`/g, '')
+          retailerArray.toString().replace(/,/g, ', ').replace(/`/g, '')
         )
     );
 
-    const embed = new PagesBuilder(interaction)
-      .setPages(embedArray)
-      .setTitle(response.name)
-      .setColor(`#b5b5b5`);
-    if (response.background_image) {
-      embed.setThumbnail(response.background_image);
-    }
-    embed.build();
+    const message = {
+      author: {
+        id: interaction.member.id,
+        bot: interaction.user.bot
+      },
+      channel: interaction.channel
+    };
+
+    await interaction.reply('Game info:');
+    PaginatedEmbed.run(message);
   }
 };
 
+function filterTitle(title) {
+  return title.replace(/ /g, '-').replace(/' /g, '').toLowerCase();
+}
+
 function getGameDetails(query) {
-  return new Promise(async function(resolve, reject) {
+  return new Promise(async function (resolve, reject) {
     const url = `https://api.rawg.io/api/games/${query}?key=${rawgAPI}`;
     try {
       const body = await fetch(url);

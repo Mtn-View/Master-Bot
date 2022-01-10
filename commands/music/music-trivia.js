@@ -1,188 +1,227 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
+const { MessageEmbed } = require('discord.js');
 const {
-  joinVoiceChannel,
-  VoiceConnectionStatus,
-  entersState
-} = require('@discordjs/voice');
-const { MessageEmbed, CommandInteractionOptionResolver } = require('discord.js');
+  getRandom,
+  normalizeValue,
+  capitalizeWords,
+  getLeaderBoard
+} = require('../../utils/trivia/utilFunctions');
 const fs = require('fs');
-const TriviaPlayer = require('../../utils/music/TriviaPlayer');
 
 module.exports = {
-  data: 	new SlashCommandBuilder()
-  .setName('music-trivia')
-  .setDescription('Music Trivia')
-  .addSubcommand(subcommand =>
-	  subcommand
-		  .setName('play')
-		  .setDescription('Engage in a music quiz with your friends!')
-		  .addStringOption(option =>
-			  option
-				  .setName('length')
-				  .setDescription('How many songs would you like the trivia to have?'),
-		  ),
-  )
-  .addSubcommand(subcommand =>
-	  subcommand
-		  .setName('add')
-		  .setDescription('Adds a song to the music trivia list.')
-		  .addStringOption(option => option.setName('url').setDescription("The YouTube URL for the song").setRequired(true))
-		  .addStringOption(option => option.setName('artist').setDescription("The song's artist").setRequired(true))
-		  .addStringOption(option => option.setName('title').setDescription("The song's title").setRequired(true)),
-  ),
+  data: new SlashCommandBuilder()
+    .setName('music-trivia')
+    .setDescription('Engage in a fun music trivia with your friends!')
+	.addIntegerOption(option =>
+		option
+			.setName('length')
+			.setDescription('How many songs would you like the trivia to have?'),
+	),
   async execute(interaction) {
-	const subcommand = interaction.options.getSubcommand()
-	if(subcommand === 'play'){
-		await startMusicTrivia(interaction)
-	} else if (subcommand === 'add'){
-		await addSongToList(interaction)
-	}
-  }
-};
-
-async function addSongToList(interaction){
-	await interaction.deferReply()
-	if(interaction.options.getString('url').includes('playlist')){
-		interaction.followUp({content: 'Adding playlists not supported! *Video* URLs only please!'})
-		return
-	}
-	let songArray = getSongArray()
-	const newSong = {
-		url: interaction.options.getString('url'),
-		singer: interaction.options.getString('artist').toLowerCase(),
-		title: interaction.options.getString('title').toLowerCase(),
-		addedBy: interaction.user.username,
-	}
-	songArray.push(newSong)
-	const result = await saveSongArray(songArray)
-	if(result){
-		interaction.followUp({content: `Successfully added song **${newSong.singer}: ${newSong.title}** to the list, for a total of ${songArray.length} songs.`})
-	} else {
-		interaction.followUp({content: 'CHARLES BROKE THE BOT! IT DIDN\'T WORK!'})
-	}
-}
-
-async function startMusicTrivia(interaction) {
-	await interaction.deferReply();
+    await interaction.deferReply();
+    const client = interaction.client;
     const voiceChannel = interaction.member.voice.channel;
+
     if (!voiceChannel) {
       return interaction.followUp(
         ':no_entry: Please join a voice channel and try again!'
       );
     }
 
-    if (interaction.client.playerManager.get(interaction.guildId)) {
+    if (
+      client.music.players.get(interaction.guildId) &&
+      client.triviaMap.get(interaction.guildId)
+    ) {
       return interaction.followUp(
-        `You can't use this while a track is playing!`
+        'Please wait until the current music trivia ends'
       );
     }
 
-    if (interaction.client.triviaManager.get(interaction.guildId)) {
-      return interaction.followUp('There is already a trivia in play!');
+    if (
+      client.music.players.get(interaction.guildId) &&
+      !client.triviaMap.get(interaction.guildId)
+    ) {
+      return interaction.followUp(
+        'Wait until the music queue gets empty and try again!'
+      );
     }
 
-    const numberOfSongs = interaction.options.get('length')
-      ? interaction.options.get('length').value
-      : 5;
+    const jsonSongs = fs.readFileSync('././utils/trivia/songs.json', 'utf-8');
 
-    const videoDataArray = getSongArray();
-    // get random numberOfSongs videos from the array
+    const songsArray = getRandom(JSON.parse(jsonSongs), 5);
 
-    const randomLinks = getRandom(videoDataArray, numberOfSongs);
-    interaction.client.triviaManager.set(
-      interaction.guildId,
-      new TriviaPlayer()
-    );
+    const tracks = [];
+    for (let i = 0; i < 5; i++) {
+      const result = await client.music.rest.loadTracks(songsArray[i].url);
+      tracks.push(result.tracks[0]);
+    }
 
-    const triviaPlayer = interaction.client.triviaManager.get(
-      interaction.guildId
-    );
+    const player = client.music.createPlayer(interaction.guildId);
+    player.queue.channel = interaction.channel;
+    await player.connect(voiceChannel.id, { deafened: true });
 
-    randomLinks.forEach(link => {
-      triviaPlayer.queue.push({
-        url: link.url,
-        singer: link.singer,
-        title: link.title,
-        voiceChannel
-      });
-    });
-
-    const membersInChannel = interaction.member.voice.channel.members;
-
-    membersInChannel.each(user => {
-      if (user.user.bot) return;
-      triviaPlayer.score.set(user.user.username, 0);
-    });
-
-    // play and display embed that says trivia started and how many songs are going to be
-    handleSubscription(interaction, triviaPlayer);
-}
-
-const songJsonPath = '././resources/music/musictrivia.json'
-
-function getSongArray() {
-	const jsonSongs = fs.readFileSync(
-		songJsonPath,
-		'utf8'
-	);
-	return JSON.parse(jsonSongs).songs;
-}
-
-async function saveSongArray(songArray){
-	await fs.writeFile(songJsonPath, JSON.stringify({songs: songArray}, null, 2), err => {
-		if (err) {
-			console.error(`Error writing file: ${err}`)
-			return false
-		}
-	})
-	return true
-}
-
-async function handleSubscription(interaction, player) {
-  const queue = player.queue;
-  let voiceChannel = queue[0].voiceChannel;
-
-  const connection = joinVoiceChannel({
-    channelId: voiceChannel.id,
-    guildId: interaction.guild.id,
-    adapterCreator: interaction.guild.voiceAdapterCreator
-  });
-
-  player.textChannel = interaction.channel;
-  player.passConnection(connection);
-  try {
-    await entersState(player.connection, VoiceConnectionStatus.Ready, 10000);
-  } catch (err) {
-    console.error(err);
-    await interaction.followUp({ content: 'Failed to join your channel!' });
-    return;
-  }
-  player.process(player.queue);
-
-  const startTriviaEmbed = new MessageEmbed()
-    .setColor('#ff7373')
-    .setTitle(':notes: Starting Music Quiz!')
-    .setDescription(
-      `:notes: Get ready! There are ${queue.length} songs, you have 30 seconds to guess either the singer/band or the name of the song. Good luck!
+    const startTriviaEmbed = new MessageEmbed()
+      .setColor('#ff7373')
+      .setTitle(':notes: Starting Music Quiz!')
+      .setDescription(
+        `:notes: Get ready! There are 5 songs, you have 30 seconds to guess either the singer/band or the name of the song. Good luck!
     Vote skip the song by entering the word 'skip'.
     You can end the trivia at any point by using the end-trivia command!`
-    );
-  return interaction.followUp({ embeds: [startTriviaEmbed] });
-}
+      );
+    interaction.followUp({ embeds: [startTriviaEmbed] });
 
-function getRandom(arr, n) {
-  var result = new Array(n),
-    len = arr.length,
-    taken = new Array(len);
-  if (n > len)
-    throw new RangeError('getRandom: more elements taken than available!');
-  while (n--) {
-    var x = Math.floor(Math.random() * len);
-    // prettier-ignore
-    result[n] = arr[(x in taken) ? taken[x] : x];
-    // prettier-ignore
-    taken[x] = (--len in taken) ? taken[len] : len;
-    // prettier-ignore-end
+    player.queue.add(tracks);
+    await player.setVolume(50);
+
+    const score = new Map();
+
+    const membersInChannel = interaction.member.voice.channel.members;
+    membersInChannel.each(user => {
+      if (user.user.bot) return;
+      score.set(user.user.username, 0);
+    });
+
+    playTrivia(interaction.channel, player, songsArray, score);
   }
-  return result;
+};
+
+async function playTrivia(textChannel, player, songsArray, score) {
+  // Randomize a number but one that won't be too close to the track ending
+  const max = player.queue.tracks[0].length - 40 * 1000; // milliseconds
+  const min = 10 * 1000; // milliseconds
+  const randomTime = Math.floor(Math.random() * (max - min + 1)) + min;
+
+  if (!player.playing) {
+    await player.queue.start();
+  } else {
+    await player.queue.next();
+  }
+
+  await player.seek(randomTime);
+
+  let songNameFound = false;
+  let songSingerFound = false;
+
+  const skippedArray = [];
+
+  const collector = textChannel.createMessageCollector({
+    time: 30000
+  });
+
+  textChannel.client.triviaMap.set(textChannel.guildId, {
+    collector,
+    wasTriviaEndCalled: false
+  });
+
+  collector.on('collect', msg => {
+    if (!score.has(msg.author.username)) return;
+    let guess = normalizeValue(msg.content);
+    let title = songsArray[0].title.toLowerCase();
+    let singers = songsArray[0].singers;
+
+    if (guess === 'skip') {
+      if (skippedArray.includes(msg.author.username)) {
+        return;
+      }
+      skippedArray.push(msg.author.username);
+      if (skippedArray.length > score.size * 0.6) {
+        return collector.stop();
+      }
+      return;
+    }
+
+    // if user guessed both singer and song name
+    if (
+      singers.some(value => guess.includes(normalizeValue(value))) &&
+      guess.includes(title)
+    ) {
+      if (
+        (songSingerFound && !songNameFound) ||
+        songNameFound & !songSingerFound
+      ) {
+        score.set(msg.author.username, score.get(msg.author.username) + 1);
+        msg.react('☑');
+        return collector.stop();
+      }
+      score.set(msg.author.username, score.get(msg.author.username) + 2);
+      msg.react('☑');
+      return collector.stop();
+    }
+    // if user guessed only the singer
+    else if (singers.some(value => guess.includes(normalizeValue(value)))) {
+      if (songSingerFound) return; // already been guessed
+      songSingerFound = true;
+      if (songNameFound && songSingerFound) {
+        score.set(msg.author.username, score.get(msg.author.username) + 1);
+        msg.react('☑');
+        return collector.stop();
+      }
+
+      score.set(msg.author.username, score.get(msg.author.username) + 1);
+      msg.react('☑');
+    }
+    // if user guessed song title
+    else if (guess.includes(title)) {
+      if (songNameFound) return; // already been guessed
+      songNameFound = true;
+
+      if (songNameFound && songSingerFound) {
+        score.set(msg.author.username, score.get(msg.author.username) + 1);
+        msg.react('☑');
+        return collector.stop();
+      }
+
+      score.set(msg.author.username, score.get(msg.author.username) + 1);
+      msg.react('☑');
+    }
+    // wrong answer
+    else {
+      return msg.react('❌');
+    }
+  });
+
+  collector.on('end', async () => {
+    const client = textChannel.client;
+    const trivia = client.triviaMap.get(textChannel.guildId);
+    // if stop-trivia was called
+    if (trivia.wasTriviaEndCalled) {
+      client.triviaMap.delete(textChannel.guildId);
+      return;
+    }
+
+    const sortedScoreMap = new Map(
+      [...score.entries()].sort(function (a, b) {
+        return b[1] - a[1];
+      })
+    );
+
+    const song = `${capitalizeWords(
+      songsArray[0].singers[0]
+    )}: ${capitalizeWords(songsArray[0].title)}`;
+
+    const embed = new MessageEmbed()
+      .setColor('#ff7373')
+      .setTitle(`:musical_note: The song was:  ${song}`)
+      .setDescription(getLeaderBoard(Array.from(sortedScoreMap.entries())));
+
+    textChannel.send({ embeds: [embed] });
+
+    songsArray.shift();
+
+    if (!songsArray.length) {
+      const embed = new MessageEmbed()
+        .setColor('#ff7373')
+        .setTitle('Music Quiz Results:')
+        .setDescription(getLeaderBoard(Array.from(sortedScoreMap.entries())));
+
+      textChannel.send({ embeds: [embed] });
+
+      player.disconnect();
+      client.music.destroyPlayer(player.guildId);
+      client.triviaMap.delete(textChannel.guildId);
+      return;
+    }
+
+    return playTrivia(textChannel, player, songsArray, score);
+  });
 }

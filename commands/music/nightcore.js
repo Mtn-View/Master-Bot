@@ -1,10 +1,9 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
-const { LoopType } = require('@lavaclient/queue');
 
 module.exports = {
   data: new SlashCommandBuilder()
-    .setName('skip')
-    .setDescription('Skip the current song playng'),
+    .setName('nightcore')
+    .setDescription('Enable/Disable Nightcore filter'),
   async execute(interaction) {
     const client = interaction.client;
 
@@ -15,21 +14,25 @@ module.exports = {
     }
 
     const player = client.music.players.get(interaction.guildId);
+
     if (!player) {
-      return interaction.reply('There is nothing playing right now!');
+      return interaction.reply('There is nothing playing at the moment!');
     }
 
     const voiceChannel = interaction.member.voice.channel;
-    if (!voiceChannel || player.channelId !== voiceChannel.id) {
+    if (voiceChannel.id !== player.channelId) {
       return interaction.reply(
-        'You need to be in the same channel as the bot in order to use that!'
+        'You must be in my channel in order to use that!'
       );
     }
 
-    if (player.queue.loop.type == LoopType.Song) {
-      player.queue.tracks.unshift(player.queue.current);
-    }
-    await player.queue.next();
-    interaction.reply('Skipped track');
+    player.filters.timescale = (player.nightcore = !player.nightcore)
+      ? { speed: 1.125, pitch: 1.125, rate: 1 }
+      : undefined;
+
+    await player.setFilters();
+    return interaction.reply(
+      `Nightcore ${player.nightcore ? 'enabled' : 'disabled'}`
+    );
   }
 };

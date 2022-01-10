@@ -5,19 +5,16 @@ const {
   MessageSelectMenu
 } = require('discord.js');
 const fetch = require('node-fetch');
-const { PagesBuilder } = require('discord.js-pages');
-const { MaxResponseTime } = require('../../options.json');
+const { PaginatedMessage } = require('@sapphire/discord.js-utilities');
 
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('reddit')
-    .setDescription(
-      'Replies with 10 top daily posts in wanted subreddit, you can specify sorting and time!'
-    )
+    .setDescription('Get posts from reddit by specifying a subreddit')
     .addStringOption(option =>
       option
         .setName('subreddit')
-        .setDescription('What subreddit would you like to search?')
+        .setDescription('subreddit name')
         .setRequired(true)
     )
     .addStringOption(option =>
@@ -34,42 +31,21 @@ module.exports = {
         .addChoice('rising', 'rising')
         .setRequired(true)
     ),
-
   async execute(interaction) {
     const message = await interaction.deferReply({
       fetchReply: true
     });
+
     const subreddit = interaction.options.get('subreddit').value;
     const sort = interaction.options.get('sort').value;
-
-    if (sort === 'top' || sort === 'controversial') {
+    if (['controversial', 'top'].some(val => val === sort)) {
       const row = new MessageActionRow().addComponents(
         new MessageSelectMenu()
           .setCustomId('top_or_controversial')
           .setPlaceholder('Please select an option')
-          .addOptions([
-            {
-              label: 'hour',
-              value: 'hour'
-            },
-            {
-              label: 'week',
-              value: 'week'
-            },
-            {
-              label: 'month',
-              value: 'month'
-            },
-            {
-              label: 'year',
-              value: 'year'
-            },
-            {
-              label: 'all',
-              value: 'all'
-            }
-          ])
+          .addOptions(optionsArray)
       );
+
       const menu = await message.channel.send({
         content: `:loud_sound: Do you want to get the ${sort} posts from past hour/week/month/year or all?`,
         components: [row]
@@ -77,7 +53,7 @@ module.exports = {
 
       const collector = menu.createMessageComponentCollector({
         componentType: 'SELECT_MENU',
-        time: MaxResponseTime * 1000
+        time: 30000 // 30 sec
       });
 
       collector.on('end', () => {
@@ -108,26 +84,28 @@ async function fetchFromReddit(
   sort,
   timeFilter = 'day'
 ) {
-  const response = await fetch(
-    `https://www.reddit.com/r/${subreddit}/${sort}/.json?limit=10&t=${
-      timeFilter ? timeFilter : 'day'
-    }`
-  );
-  const json = await response.json();
-  const dataArr = [];
+  try {
+    var json = await getData(subreddit, sort, timeFilter);
+  } catch (error) {
+    return interaction.followUp(error);
+  }
 
-  for (let i = 1; i <= json.data.children.length; ++i) {
-    var color = '#FE9004';
-    var redditPost = json.data.children[i - 1];
+  interaction.followUp('Fetching data from reddit');
 
-    if (redditPost.data.title.length > 255)
-      redditPost.data.title = redditPost.data.title.substring(0, 252) + '...'; // discord.js does not allow embed title lengths greater than 256
+  const paginatedEmbed = new PaginatedMessage();
+  for (let i = 1; i <= json.data.children.length; i++) {
+    let color = '#FE9004';
+    let redditPost = json.data.children[i - 1];
 
-    if (redditPost.data.over_18) color = '#cf000f';
+    if (redditPost.data.title.length > 255) {
+      redditPost.data.title = redditPost.data.title.substring(0, 252) + '...'; // max title length is 256
+    }
 
-    dataArr.push(
-      new MessageEmbed()
-        .setColor(color) // if post is nsfw, color is red
+    if (redditPost.data.over_18) color = '#cf00f'; // red - nsfw
+
+    paginatedEmbed.addPageEmbed(embed =>
+      embed
+        .setColor(color)
         .setTitle(redditPost.data.title)
         .setURL(`https://www.reddit.com${redditPost.data.permalink}`)
         .setDescription(`Upvotes: ${redditPost.data.score} :thumbsup: `)
@@ -135,5 +113,54 @@ async function fetchFromReddit(
     );
   }
 
-  return new PagesBuilder(interaction).setPages(dataArr).build();
+  const message = {
+    author: {
+      id: interaction.member.id,
+      bot: interaction.user.bot
+    },
+    channel: interaction.channel
+  };
+
+  paginatedEmbed.run(message);
 }
+
+function getData(subreddit, sort, timeFilter) {
+  return new Promise(async function (resolve, reject) {
+    const response = await fetch(
+      `https://www.reddit.com/r/${subreddit}/${sort}/.json?limit=10&t=${
+        timeFilter ? timeFilter : 'day'
+      }`
+    );
+    const json = await response.json();
+
+    if (!json.data) {
+      reject(`**${subreddit}** is a private subreddit!`);
+    } else if (!json.data.children.length) {
+      reject('Please provide a valid subreddit name!');
+    }
+    resolve(json);
+  });
+}
+
+const optionsArray = [
+  {
+    label: 'hour',
+    value: 'hour'
+  },
+  {
+    label: 'week',
+    value: 'week'
+  },
+  {
+    label: 'month',
+    value: 'month'
+  },
+  {
+    label: 'year',
+    value: 'year'
+  },
+  {
+    label: 'all',
+    value: 'all'
+  }
+];

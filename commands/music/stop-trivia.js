@@ -3,36 +3,32 @@ const { SlashCommandBuilder } = require('@discordjs/builders');
 module.exports = {
   data: new SlashCommandBuilder()
     .setName('stop-trivia')
-    .setDescription('End a music trivia (if one is in play)'),
+    .setDescription('End a music trivia'),
   execute(interaction) {
-    const triviaPlayer = interaction.client.triviaManager.get(
-      interaction.guildId
-    );
-    if (!triviaPlayer) {
-      return interaction.reply(':x: No trivia is currently running!');
+    const client = interaction.client;
+
+    if (!client.triviaMap.has(interaction.guildId)) {
+      return interaction.reply(
+        'There is no music trivia playing at the moment!'
+      );
     }
 
     if (
       interaction.guild.me.voice.channel !== interaction.member.voice.channel
     ) {
-      return interaction.reply(
-        ':no_entry: Please join a voice channel and try again!'
-      );
+      return interaction.reply('Please join my voice channel and try again!');
     }
 
-    if (!triviaPlayer.score.has(interaction.member.user.username)) {
-      return interaction.reply(
-        ':stop_sign: You need to participate in the trivia in order to end it'
-      );
-    }
-    triviaPlayer.queue.length = 0;
-    triviaPlayer.wasTriviaEndCalled = true;
-    triviaPlayer.score.clear();
-    triviaPlayer.connection.destroy();
-    interaction.client.triviaManager.delete(interaction.guildId);
+    const player = client.music.players.get(interaction.guildId);
 
-    interaction.reply(
-      'Stopped the trivia! To start a new one, use the music-trivia command'
-    );
+    const trivia = client.triviaMap.get(interaction.guildId);
+    const collector = trivia.collector;
+    trivia.wasTriviaEndCalled = true;
+    collector.stop();
+
+    player.queue.length = 0;
+    player.disconnect();
+    client.music.destroyPlayer(player.guildId);
+    return interaction.reply('Ended the music trivia!');
   }
 };
