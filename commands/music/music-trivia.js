@@ -64,7 +64,7 @@ function songIsDuplicate(song = {}, existingSongs = []) {
 async function addSongToList(interaction){
 	await interaction.deferReply()
 	if(interaction.options.getString('url').includes('playlist')){
-		interaction.followUp({content: 'Adding playlists not supported! *Video* URLs only please!'})
+		interaction.followUp({content: 'Adding playlists not supported! *Video* URLs only please!', ephemeral: true})
 		return
 	}
 
@@ -77,16 +77,16 @@ async function addSongToList(interaction){
 	}
 
 	if(!isValidSong(newSong)){
-		interaction.followUp({content: `Invalid YouTube URL provided`})
+		interaction.followUp({content: `Invalid YouTube URL provided`, ephemeral: true})
 	} else if(songIsDuplicate(newSong, songArray)) {
-		interaction.followUp({content: `**${newSong.singer}: ${newSong.title}** already exists in the list!`})
+		interaction.followUp({content: `**${newSong.singer}: ${newSong.title}** already exists in the list!`, ephemeral: true})
 	} else {
 		songArray.push(newSong)
 		const result = await saveSongArray(songArray)
 		if(result){
-			interaction.followUp({content: `Successfully added song **${newSong.singer}: ${newSong.title}** to the list, for a total of ${songArray.length} songs.`})
+			interaction.followUp({content: `Successfully added song **${newSong.singer}: ${newSong.title}** to the list, for a total of ${songArray.length} songs.`, ephemeral: true})
 		} else {
-			interaction.followUp({content: 'CHARLES BROKE THE BOT! IT DIDN\'T WORK!'})
+			interaction.followUp({content: 'CHARLES BROKE THE BOT! IT DIDN\'T WORK!', ephemeral: true})
 		}
 	}
 }
