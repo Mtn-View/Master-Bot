@@ -40,12 +40,33 @@ module.exports = {
   }
 };
 
+const urlRegex = /[^=\/]*$/
+
+function isValidSong(song) {
+	const songUrlKey = song.url
+	const match = urlRegex.exec(songUrlKey)
+
+	return !!match
+}
+
+function songIsDuplicate(song = {}, existingSongs = []) {
+	const [ urlSuffix ] = urlRegex.exec(song.url)
+
+	const lowercaseTitle = song?.title?.toLowerCase()
+	const lowercaseSinger = song?.singer?.toLowerCase()
+
+	return !!existingSongs.some(existingSong => {
+		return existingSong.url.endsWith(urlSuffix) || (lowercaseSinger === existingSong?.singer && lowercaseTitle === existingSong?.title)
+	})
+}
+
 async function addSongToList(interaction){
 	await interaction.deferReply()
 	if(interaction.options.getString('url').includes('playlist')){
 		interaction.followUp({content: 'Adding playlists not supported! *Video* URLs only please!'})
 		return
 	}
+
 	let songArray = getSongArray()
 	const newSong = {
 		url: interaction.options.getString('url'),
@@ -53,12 +74,19 @@ async function addSongToList(interaction){
 		title: interaction.options.getString('title').toLowerCase(),
 		addedBy: interaction.user.username,
 	}
-	songArray.push(newSong)
-	const result = await saveSongArray(songArray)
-	if(result){
-		interaction.followUp({content: `Successfully added song **${newSong.singer}: ${newSong.title}** to the list, for a total of ${songArray.length} songs.`})
+
+	if(!isValidSong(newSong)){
+		interaction.followUp({content: `Invalid YouTube URL provided`})
+	} else if(songIsDuplicate(newSong, songArray)) {
+		interaction.followUp({content: `**${newSong.singer}: ${newSong.title}** already exists in the list!`})
 	} else {
-		interaction.followUp({content: 'CHARLES BROKE THE BOT! IT DIDN\'T WORK!'})
+		songArray.push(newSong)
+		const result = await saveSongArray(songArray)
+		if(result){
+			interaction.followUp({content: `Successfully added song **${newSong.singer}: ${newSong.title}** to the list, for a total of ${songArray.length} songs.`})
+		} else {
+			interaction.followUp({content: 'CHARLES BROKE THE BOT! IT DIDN\'T WORK!'})
+		}
 	}
 }
 
