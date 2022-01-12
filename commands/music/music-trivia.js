@@ -56,7 +56,8 @@ function songIsDuplicate(song = {}, existingSongs = []) {
 	const lowercaseSinger = song?.singer?.toLowerCase()
 
 	return !!existingSongs.some(existingSong => {
-		return existingSong.url.endsWith(urlSuffix) || (lowercaseSinger === existingSong?.singer && lowercaseTitle === existingSong?.title)
+		return existingSong.url.endsWith(urlSuffix) ||
+			(lowercaseSinger === existingSong?.singer?.toLowerCase() && lowercaseTitle === existingSong?.title?.toLowerCase())
 	})
 }
 
