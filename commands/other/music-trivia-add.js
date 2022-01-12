@@ -11,11 +11,12 @@ module.exports = {
 		.addStringOption(option => option.setName('artist').setDescription("The song's artist").setRequired(true))
 		.addStringOption(option => option.setName('title').setDescription("The song's title").setRequired(true)),
 	async execute(interaction) {
-		await interaction.deferReply()
+		await interaction.deferReply({ephemeral: true})
 		if(interaction.options.getString('url').includes('playlist')){
-			interaction.followUp({content: 'Adding playlists not supported! *Video* URLs only please!'})
+			interaction.followUp({content: 'Adding playlists not supported! *Video* URLs only please!', ephemeral: true})
 			return
 		}
+
 		let songArray = getSongArray()
 		const newSong = {
 			url: interaction.options.getString('url'),
@@ -23,12 +24,19 @@ module.exports = {
 			title: interaction.options.getString('title').toLowerCase(),
 			addedBy: interaction.user.username,
 		}
-		songArray.push(newSong)
-		const result = await saveSongArray(songArray)
-		if(result){
-			interaction.followUp({content: `Successfully added song **${newSong.singer}: ${newSong.title}** to the list, for a total of ${songArray.length} songs.`})
+
+		if(!isValidSong(newSong)){
+			interaction.followUp({content: `Invalid YouTube URL provided`, ephemeral: true})
+		} else if(songIsDuplicate(newSong, songArray)) {
+			interaction.followUp({content: `**${newSong.singer}: ${newSong.title}** already exists in the list!`, ephemeral: true})
 		} else {
-			interaction.followUp({content: 'Error adding song to song list.'})
+			songArray.push(newSong)
+			const result = await saveSongArray(songArray)
+			if(result){
+				interaction.followUp({content: `Successfully added song **${newSong.singer}: ${newSong.title}** to the list, for a total of ${songArray.length} songs.`, ephemeral: true})
+			} else {
+				interaction.followUp({content: 'Error saving song to list.', ephemeral: true})
+			}
 		}
 	}
 }
@@ -49,4 +57,25 @@ function getSongArray() {
 		'utf8'
 	);
 	return JSON.parse(jsonSongs).songs;
+}
+
+const urlRegex = /[^=\/]*$/
+
+function isValidSong(song) {
+	const songUrlKey = song.url
+	const match = urlRegex.exec(songUrlKey)
+
+	return !!match
+}
+
+function songIsDuplicate(song = {}, existingSongs = []) {
+	const [ urlSuffix ] = urlRegex.exec(song.url)
+
+	const lowercaseTitle = song?.title?.toLowerCase()
+	const lowercaseSinger = song?.singer?.toLowerCase()
+
+	return !!existingSongs.some(existingSong => {
+		return existingSong.url.endsWith(urlSuffix) ||
+			(lowercaseSinger === existingSong?.singer?.toLowerCase() && lowercaseTitle === existingSong?.title?.toLowerCase())
+	})
 }
