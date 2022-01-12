@@ -62,7 +62,7 @@ function songIsDuplicate(song = {}, existingSongs = []) {
 }
 
 async function addSongToList(interaction){
-	await interaction.deferReply()
+	await interaction.deferReply({ephemeral: true})
 	if(interaction.options.getString('url').includes('playlist')){
 		interaction.followUp({content: 'Adding playlists not supported! *Video* URLs only please!', ephemeral: true})
 		return
