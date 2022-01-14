@@ -1,1904 +1,1916 @@
 {
-	"songs": [
-		{
-			"url": "https://www.youtube.com/watch?v=4-jBiumYmXk",
-			"singer": "adele",
-			"title": "hello"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=hLQl3WQQoQ0",
-			"singer": "adele",
-			"title": "someone like you"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=rYEDA3JcQqw",
-			"singer": "adele",
-			"title": "rolling in the deep"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=7JJfJgyHYwU",
-			"singer": "rixton",
-			"title": "me and my broken heart"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=SR6iYWJxHqs",
-			"singer": "bruno mars",
-			"title": "grenade"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=pXRviuL6vMY",
-			"singer": "twenty one pilots",
-			"title": "stressed out"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=fLexgOxsZu0",
-			"singer": "bruno mars",
-			"title": "the lazy song"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=QK8mJJJvaes",
-			"singer": "macklemore",
-			"title": "thrift shop"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=fWNaR-rxAic",
-			"singer": "carly rae jepsen",
-			"title": "call me maybe"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
-			"singer": "bon jovi",
-			"title": "livin on a prayer"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=dKez38i5h14",
-			"singer": "gorillaz",
-			"title": "feel good inc"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=0J2QdDbelmY",
-			"singer": "the white stripes",
-			"title": "seven nation army"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ZbytR2avo-0",
-			"singer": "eminem",
-			"title": "without me"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=eVTXPUF4Oz4",
-			"singer": "linkin park",
-			"title": "in the end"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=kXYiU_JCYtU",
-			"singer": "linkin park",
-			"title": "numb"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=hTWKbfoikeg",
-			"singer": "nirvana",
-			"title": "smells like teen spirit"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=y1nM4OKvoXw",
-			"singer": "flo rida",
-			"title": "low"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=1CBN9fKeVB4",
-			"singer": "panic at the disco",
-			"title": "i write sins not tragedies"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=lOxb_SW4Cfg",
-			"singer": "kanye west",
-			"title": "gold digger"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=u5uSlUKBEDc",
-			"singer": "kesha",
-			"title": "tik tok"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=r5EXKDlf44M",
-			"singer": "green day",
-			"title": "boulevard of broken dreams"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=3JV74i4yvcA",
-			"singer": "train",
-			"title": "hey soul sister"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=opPV1-IUmGw",
-			"singer": "coldplay",
-			"title": "viva la vida"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=EQ2T-Tw_drE",
-			"singer": "taio cruz",
-			"title": "dynamite"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ADIyIlO-_Ug",
-			"singer": "snoop dogg",
-			"title": "the next episode"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=F57P9C4SAW4",
-			"singer": "katy perry",
-			"title": "california gurls"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=8aRor905cCw",
-			"singer": "bruno mars",
-			"title": "billionaire"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=SgM3r8xKfGE",
-			"singer": "flo rida",
-			"title": "club cant handle me"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Wx9XYrRpHjo",
-			"singer": "mike posner",
-			"title": "cooler than me"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=F3CIbk3At_8",
-			"singer": "m.i.a",
-			"title": "paper planes"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ViwtNLUqkMY",
-			"singer": "beyonce",
-			"title": "crazy in love"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Fi8rsCncwF8",
-			"singer": "outkast",
-			"title": "hey ya"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=nlcIKh6sBtc",
-			"singer": "lorde",
-			"title": "royals"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=XNX8z0A3XVM",
-			"singer": "drake",
-			"title": "hotline bling"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=lWD9wVPwhH4",
-			"singer": "50 cent",
-			"title": "in the club"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=uCRT8IItGpw",
-			"singer": "britney spears",
-			"title": "toxic"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=oRAuQM3pl-Y",
-			"singer": "nelly",
-			"title": "hot in here"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=MHU6vvsTnbI",
-			"singer": "maroon 5",
-			"title": "this love"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Y4QGPWLY-EM",
-			"singer": "eiffel 65",
-			"title": "blue"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=i4YutyVP7ig",
-			"singer": "kelis",
-			"title": "milkshake"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=_G7QmqDLpTo",
-			"singer": "franz ferdinand",
-			"title": "take me out"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=HrQsGeKN6qk",
-			"singer": "system of a down",
-			"title": "chop suey"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=6Un9HLDCTCs",
-			"singer": "eminem",
-			"title": "lose yourself"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=96MiYk9VYvc",
-			"singer": "evanescence",
-			"title": "bring me to life"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=GjyltncPu7I",
-			"singer": "lady gaga",
-			"title": "just dance"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=-zuviud2HHQ",
-			"singer": "cascada",
-			"title": "everytime we touch"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=5pVKZeSoAp0",
-			"singer": "one republic",
-			"title": "apologize"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=IGuSsEfZwDs",
-			"singer": "kanye west",
-			"title": "touch the sky"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=UaCHLRB-4Oo",
-			"singer": "sean kingston",
-			"title": "beautiful girls"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=uSD4vsh1zDA",
-			"singer": "black eyed peas",
-			"title": "i gotta feeling"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=9g5m3z24jJM",
-			"singer": "fun",
-			"title": "we are young"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=225K-LR62Ek",
-			"singer": "backstreet boys",
-			"title": "i want it that way"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=E50c3_9V-Gg",
-			"singer": "mgmt",
-			"title": "kids"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=OZnBt2W48A0",
-			"singer": "snoop dogg",
-			"title": "drop it like its hot"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=a1BS7XnEZqc",
-			"singer": "green day",
-			"title": "american idiot"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=WcBfg4NmqzA",
-			"singer": "arctic monkeys",
-			"title": "mardy bum"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=P9MwxdtzrvA",
-			"singer": "pink",
-			"title": "so what"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=_ovdm2yX4MA",
-			"singer": "avicii",
-			"title": "levels"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=gkBvuhBBhvA",
-			"singer": "usher",
-			"title": "omg"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=JiUNTdFX8G8",
-			"singer": "rihanna",
-			"title": "love the way you lie"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=xR6lFaPTxh0",
-			"singer": "wiz khalifa",
-			"title": "black and yellow"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=NNM2kEBGiRs",
-			"singer": "maroon 5",
-			"title": "moves like jagger"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Q4Y-FbeCX14",
-			"singer": "kelly clarkson",
-			"title": "stronger"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=aS85AvLl9Ik",
-			"singer": "flo rida",
-			"title": "whistle"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=qV0LHCHf-pE",
-			"singer": "baauer",
-			"title": "harlem shake"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ziN7Y1M1v8s",
-			"singer": "bruno mars",
-			"title": "uptown funk"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=8wP2AsnTfac",
-			"singer": "the weeknd",
-			"title": "cant feel my face"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Coq-OlEdZQ8",
-			"singer": "lmfao",
-			"title": "party rock anthem"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=yG60iRJwmfA",
-			"singer": "jonas brothers",
-			"title": "sucker"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=BKLVpDTZOPQ",
-			"singer": "Foster The People",
-			"title": "Sit Next to Me"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Ys3FvbIybW4",
-			"singer": "Brockhampton",
-			"title": "Face"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=VcyFfcJbyeM",
-			"singer": "Lil Uzi Vert",
-			"title": "XO Tour Llif3"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ClhLNUPqv8Q",
-			"singer": "Dua Lipa",
-			"title": "New Rules"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=AMtN4sOvhqY",
-			"singer": "Taylor Swift",
-			"title": "Lover"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=5gBeLN2Jkng",
-			"singer": "Charlie Puth",
-			"title": "Attention"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=yNk8OoBpQMI",
-			"singer": "J Cole",
-			"title": "No Role Modelz"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=9Imk7kIpgos",
-			"singer": "Sam Smith",
-			"title": "Stay With Me"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ZBuPhinZVzk",
-			"singer": "Amine",
-			"title": "Caroline"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ijl_cfyQqLA",
-			"singer": "Maggie Rogers",
-			"title": "Fallingwater"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=7pzOBI3PD8E",
-			"singer": "The Neighbourhood",
-			"title": "Sweater Weather"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=MrbHZkHimbo",
-			"singer": "King Princess",
-			"title": "1950"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Tm6-SEfRoBA",
-			"singer": "Sia",
-			"title": "Chandelier"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=0i1o9lSUuI8",
-			"singer": "Taylor Swift",
-			"title": "Delicate"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=2RAI2IEtbFs",
-			"singer": "Disclosure",
-			"title": "Latch"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=8o5BHH9U2Mg",
-			"singer": "Robyn",
-			"title": "Missing U"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=kqaGZYDGcUw",
-			"singer": "rihanna",
-			"title": "We Found Love"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=1S5NDIc1_3U",
-			"singer": "Halsey",
-			"title": "Gasoline"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=VYOjWnS4cMY",
-			"singer": "Childish Gambino",
-			"title": "This Is America"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=sPQrcSo2ee4",
-			"singer": "Alabama Shakes",
-			"title": "Dont Wanna Fight"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=LNAwPvfF2Os",
-			"singer": "Janelle Monae",
-			"title": "Make Me Feel"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Cf6cR6Nve70",
-			"singer": "Ariana Grande",
-			"title": "God Is a Woman"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=XnbsIl2BnWw",
-			"singer": "frank ocean",
-			"title": "Chanel"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=t0imaSCnSuA",
-			"singer": "Hozier",
-			"title": "Take Me to Church"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=pNt0w1L2wSY",
-			"singer": "Kanye West",
-			"title": "Black Skinhead"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=5ytzbr4SiKE",
-			"singer": "Luis Fonsi",
-			"title": "Despacito"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=z17hTy-Ne5c",
-			"singer": "Rae Sremmurd",
-			"title": "Black Beatles"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=kfyrOszCbRk",
-			"singer": "beyonce",
-			"title": "Hold Up"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=k32XJyU2UKA",
-			"singer": "Travis Scott",
-			"title": "Antidote"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Adtadg-UBYA",
-			"singer": "Post Malone",
-			"title": "Congratulations"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Gx6xnVQuFzw",
-			"singer": "Kendrick Lamar",
-			"title": "Humble"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=YV3ExBDBv_I",
-			"singer": "David Bowie",
-			"title": "Blackstar"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=87xa7w2QymA",
-			"singer": "Childish Gambino",
-			"title": "Redbone"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=fQ17tnRrA8k",
-			"singer": "Arctic Monkeys",
-			"title": "Do I Wanna Know?"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=EbB4PP4HknU",
-			"singer": "Nicki Minaj",
-			"title": "Super Bass"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=4bFrM_7CdAM",
-			"singer": "Lykke Li",
-			"title": "I Follow Rivers"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ZwyiZLgiP6w",
-			"singer": "Travis Scott",
-			"title": "Sicko Mode"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=4-TbQnONe_w",
-			"singer": "billie eilish",
-			"title": "Bad Guy"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=DSxg7pNYQhI",
-			"singer": "ac/dc",
-			"title": "back in black"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=axAtWjn3MfI",
-			"singer": "queen",
-			"title": "Bohemian Rhapsody"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=1w7OgIMMRc4",
-			"singer": "Guns N Roses",
-			"title": "Sweet Child O' Mine"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=9Q4IO19E8Kg",
-			"singer": "Damian Marley",
-			"title": "Welcome To Jamrock"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=tux7eKFZn30",
-			"singer": "Amy Winehouse",
-			"title": "Back to Black"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ytBR7ET_6uU",
-			"singer": "Owl City",
-			"title": "Fireflies"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=lCiZ8pMnLV4",
-			"singer": "Lady Gaga",
-			"title": "Poker Face"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=oGTBax-Cu4Q",
-			"singer": "Flo Rida",
-			"title": "Right Round"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Wa6ZkaJfYso",
-			"singer": "Eminem",
-			"title": "Crack a Bottle"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Nn5IvIwBBec",
-			"singer": "Kelly Clarkson",
-			"title": "My Life Would Suck Without You"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=kdATGDEjAzs",
-			"singer": "Usher",
-			"title": "Love In This Club"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=We1AQetsAx4",
-			"singer": "Soulja Boy",
-			"title": "Crank That"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=PoaT6WXUV_M",
-			"singer": "Plain White T's",
-			"title": "Hey there delilah"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=tst-pb3YCEc",
-			"singer": "Rihanna",
-			"title": "Umbrella"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ELIw88IeSeE",
-			"singer": "Akon",
-			"title": "Don't Matter"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=foaLW5DGhpI",
-			"singer": "Beyonce",
-			"title": "Irreplaceable"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=FCR9qFSgZYE",
-			"singer": "Nelly furtado",
-			"title": "promiscuous"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=EPKHC59Fpko",
-			"singer": "Shakira",
-			"title": "Hips Don't Lie"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=x1TsfShR5ZY",
-			"singer": "Justin Timberlake",
-			"title": "My Love"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=RmNTAvnSais",
-			"singer": "Daniel Powter",
-			"title": "Bad Day"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=VLz6aIW2svk",
-			"singer": "Chris Brown",
-			"title": "Run It"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=9t7Y3puRKM0",
-			"singer": "Mariah Carey",
-			"title": "We belong together"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=IZKBa6bvUjo",
-			"singer": "50 Cent",
-			"title": "Candy Shop"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=B8FTyEdLjqA",
-			"singer": "Mario",
-			"title": "Let Me Love You"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=GTpkYtYYi7o",
-			"singer": "Usher",
-			"title": "My Boo"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=eYaSNZRbFsA",
-			"singer": "Eminem",
-			"title": "Not Afraid"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=z6wjKlZjYfQ",
-			"singer": "Bruno Mars",
-			"title": "Nothin' on You"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=lPTkBcP1wCM",
-			"singer": "Rihanna",
-			"title": "Rude Boy"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=n1lfYh-aUk0",
-			"singer": "Katy Perry",
-			"title": "Firework"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=GvgJEznqtms",
-			"singer": "far east movement",
-			"title": "Like A G6"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=0BsLd4Y060Q",
-			"singer": "Lady Gaga",
-			"title": "Born This Way"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=wyx6JDQCslE",
-			"singer": "LMFAO",
-			"title": "Sexy And I Know It"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Odq6cZulKA8",
-			"singer": "Bruno Mars",
-			"title": "Locked Out Of Heaven"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=cpzO4OGP9q0",
-			"singer": "Miley Cyrus",
-			"title": "Wrecking Ball"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=cmCDqX3ngfA",
-			"singer": "Pharrell Williams",
-			"title": "Happy"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=73_DOquGBD4",
-			"singer": "John Legend",
-			"title": "All of Me"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=IlwIcTsmERw",
-			"singer": "Magic",
-			"title": "Rude"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=v-F2jdXMywI",
-			"singer": "Taylor Swift",
-			"title": "Blank Space"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=VQspRB0ztMw",
-			"singer": "OMI",
-			"title": "Cheerleader"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=NywWB67Z7zQ",
-			"singer": "Justin Bieber",
-			"title": "What Do You Mean?"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=3MQMQTBTVHU",
-			"singer": "The Weeknd",
-			"title": "The Hills"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=YO-XGWSvZB0",
-			"singer": "Zayn",
-			"title": "PillowTalk"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=4NJlUribp3c",
-			"singer": "Desiigner",
-			"title": "Panda"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=570tFRoRR0A",
-			"singer": "Pink",
-			"title": "Raise your Glass"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Nj2U6rhnucI",
-			"singer": "dua lipa",
-			"title": "break my heart"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=83xBPCw5hh4",
-			"singer": "dababy",
-			"title": "Rockstar"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=JwzIGTlXOHM",
-			"singer": "justin bieber",
-			"title": "yummy"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=fwK7ggA3-bU",
-			"singer": "maroon 5",
-			"title": "one more night"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=pPw_izFr5PA",
-			"singer": "6ix9ine",
-			"title": "GOOBA"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=UYwF-jdcVjY",
-			"singer": "post malone",
-			"title": "better now"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=fEUS_NP5Qzo",
-			"singer": "blackbear",
-			"title": "chateau"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=WagT4pdaPG8",
-			"singer": "CMG",
-			"title": "stonner"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=CxnaPa8ohmM",
-			"singer": "g-eazy",
-			"title": "i mean it"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=cwQgjq0mCdE",
-			"singer": "kanye west",
-			"title": "i love it"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=QYh6mYIJG2Y",
-			"singer": "ariana grande",
-			"title": "7 rings"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=6axOY4PBusk",
-			"singer": "nofx",
-			"title": "linoleum",
-			"addedBy": "John Wise"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=jeJUaBC_rhc",
-			"singer": "johnny cash",
-			"title": "hey porter",
-			"addedBy": "John Wise"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=KnnHprUGKF0",
-			"singer": "jimmy dean",
-			"title": "big bad john",
-			"addedBy": "John Wise"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=4NhKWZpkw1Q",
-			"singer": "sia",
-			"title": "big girls cry",
-			"addedBy": "Dayton"
-		},
-		{
-			"url": "https://youtu.be/SNdcFPjGsm8",
-			"singer": "the beatles",
-			"title": "revolution 9",
-			"addedBy": "CharlesKaup"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=SUFSB2plwzM",
-			"singer": "311",
-			"title": "Amber"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=v2AC41dglnM",
-			"singer": "ac/dc",
-			"title": "Thunderstruck"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=etAIpkdhU9Q",
-			"singer": "ac/dc",
-			"title": "Hells Bells"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=qsaTFcXVCNU",
-			"singer": "ac/dc",
-			"title": "For Those About to Rock"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=EEpwhkE5zZg",
-			"singer": "ac/dc",
-			"title": "Ride On"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=fNWqSez_6VA",
-			"singer": "Al Green",
-			"title": "Let's Stay Together"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=sThaCXe1eJU",
-			"singer": "Alanis Morissette",
-			"title": "Ironic"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=TAqZb52sgpU",
-			"singer": "Alice In Chains",
-			"title": "Man in the Box"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=7A1utb0NrHU",
-			"singer": "Anderson .Paak",
-			"title": "Tints"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=cmSbXsFE3l8",
-			"singer": "Anna Kendrick",
-			"title": "Cups"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=IcrbM1l_BoI",
-			"singer": "avicii",
-			"title": "Wake Me Up"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=12kcpP-8jfM",
-			"singer": "Bad Religion",
-			"title": "American Jesus"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=LGMQjTwSRSQ",
-			"singer": "Bad Religion",
-			"title": "I Want to Conquer the World"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=9_tczaH_URw",
-			"singer": "Bad Religion",
-			"title": "We're Only Gonna Die"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=DE-iQ5-DL4k",
-			"singer": "Bad Religion",
-			"title": "No Control"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=snZcn3Qt1xI",
-			"singer": "Bare Naked Ladies",
-			"title": "One Week"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ru3gH27Fn6E",
-			"singer": "Beastie Boys",
-			"title": "So Whatcha Want"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=DGRemW4bEgs",
-			"singer": "Beastie Boys",
-			"title": "Fight For Your Right"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ln-Jq6X6p-g",
-			"singer": "Beastie Boys",
-			"title": "Intergalactic"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=YgSPaXgAdzE",
-			"singer": "Beck",
-			"title": "Loser"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=oaLDut30Br0",
-			"singer": "Bill Withers",
-			"title": "Lovely Day"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=eFTLKWw542g",
-			"singer": "Billy Joel",
-			"title": "We Didn't Start the Fire"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=gxEPV4kolz0",
-			"singer": "Billy Joel",
-			"title": "Piano Man"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=aqP4-dUMkMc",
-			"singer": "Billy Talent",
-			"title": "Surrender"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=p0mRIhK9seg",
-			"singer": "Bjork",
-			"title": "Human Behavior"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=DT4kQlM5xuE",
-			"singer": "Blanco Brown",
-			"title": "The Git Up"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=WGU_4-5RaxU",
-			"singer": "Blondie",
-			"title": "Heart Of Glass"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=SSbBvKaM6sk",
-			"singer": "Blur",
-			"title": "Song 2"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=d-diB65scQU",
-			"singer": "Bobby McFerrin",
-			"title": "Don't Worry Be Happy"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=s86K-p089R8",
-			"singer": "bon jovi",
-			"title": "Runaway"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=SRvCvsRp5ho",
-			"singer": "bon jovi",
-			"title": "Wanted Dead Or Alive"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=NvR60Wg9R7Q",
-			"singer": "bon jovi",
-			"title": "Bed of Roses"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=RSJbYWPEaxw",
-			"singer": "bon jovi",
-			"title": "Hallelujah"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=MfmYCM4CS8o",
-			"singer": "bon jovi",
-			"title": "Blaze of Glory"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=0oox9bJaGJ8",
-			"singer": "Booker T & The MG's",
-			"title": "Green Onions"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Rciee-oQLoI",
-			"singer": "Boys II Men",
-			"title": "Motownphilly"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=AolstL1_MhE",
-			"singer": "Bring Me The Horizon",
-			"title": "Obey"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=racmy7Y9P4M",
-			"singer": "Bring Me The Horizon",
-			"title": "Parasite Eve"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=B9wvTuDC-H0",
-			"singer": "Bring Me The Horizon",
-			"title": "Ludens"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=cOeKidp-iWo",
-			"singer": "Bruce Hornsby",
-			"title": "The Way It Is"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=1eD-8NTwP9I",
-			"singer": "Buffalo Springfield",
-			"title": "For What It's Worth"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=KxprPYJo3yY",
-			"singer": "Busta Rhymes",
-			"title": "Dangerous"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Q8O_g7fXV9o",
-			"singer": "Cake",
-			"title": "Thrills"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=KtqQYPUJk8E",
-			"singer": "Calvin Harris",
-			"title": "Feel So Close"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=MZjAantupsA",
-			"singer": "Cameo",
-			"title": "Word Up"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=47dtFZ8CFo8",
-			"singer": "Capital Cities",
-			"title": "Safe and Sound"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=LHUKKrcXfJs",
-			"singer": "CHVRCHES",
-			"title": "Get Out"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=n0H3RlaQVrM",
-			"singer": "Coheed and Cambria",
-			"title": "Welcome Home"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=2LJg9UvoKvk",
-			"singer": "Coolio",
-			"title": "Gangsta's Paradise"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=eTeg1txDv8w",
-			"singer": "Crash Test Dummies",
-			"title": "Mmm Mmm Mmm Mmm"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=nrm2B0lhvYc",
-			"singer": "Dead Kennedys",
-			"title": "Holiday in Cambodia"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=jrWflCJPM4w",
-			"singer": "Dead Kennedys",
-			"title": "California Uber Alles"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=4ncqvLktdT8",
-			"singer": "Dead Kennedys",
-			"title": "Too Drunk to Fuck"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=dTAReklsJnw",
-			"singer": "Deee Lite",
-			"title": "Groove Is In The Heart"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=RaG8faaFUMM",
-			"singer": "Def Leppard",
-			"title": "Pour Some Sugar On Me"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=kHue-HaXXzg",
-			"singer": "Demi Lovato",
-			"title": "Let It Go"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=fV7o0KG4WeQ",
-			"singer": "Digital Underground",
-			"title": "The Humpty Dance"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=JXkN3nJyWEA",
-			"singer": "Dinosaur Jr",
-			"title": "Feel The Pain"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=wv-34w8kGPM",
-			"singer": "Divinyls",
-			"title": "I Touch Myself"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=PAzH-YAlFYc",
-			"singer": "DNCE",
-			"title": "Cake By The Ocean"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=x-64CaD8GXw",
-			"singer": "Dropkick Murphies",
-			"title": "I'm Shipping up to Boston"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=tDl3bdE3YQA",
-			"singer": "Edie Brickell & New Bohemians",
-			"title": "What I Am"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=0NKUpo_xKyQ",
-			"singer": "Ellie Goulding",
-			"title": "Lights"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=S-cbOl96RFM",
-			"singer": "Etta James",
-			"title": "At Last"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=2iijmj5nB6I",
-			"singer": "Fall of Troy",
-			"title": "FCPREMIX"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ltYq-jalYm0",
-			"singer": "Feist",
-			"title": "My Moon My Man"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=NbxqtbqyoRk",
-			"singer": "Fiona Apple",
-			"title": "Fast As You Can"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=eBG7P-K-r1Y",
-			"singer": "Foo Fighters",
-			"title": "Everlong"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=kgBKS4JCsec",
-			"singer": "Foxy Shazam",
-			"title": "Holy Touch"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Om_VWBua0_M",
-			"singer": "Foxy Shazam",
-			"title": "Oh Lord"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=MPlb9HoOCxs",
-			"singer": "Fugees",
-			"title": "Fu-Gee-La"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=q7yCLn-O-Y0",
-			"singer": "fun",
-			"title": "Carry On"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=AIoaiTwLk6I",
-			"singer": "fun",
-			"title": "All the Pretty Girls"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=0KRXvtfE7Ag",
-			"singer": "fun",
-			"title": "Why Am I The One"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=QxTBtHsh408",
-			"singer": "fun",
-			"title": "Some Nights"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=6nldpjPbGqg",
-			"singer": "GERARDO",
-			"title": "Rico Suave"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ME3Ahe8z16k",
-			"singer": "Godsmack",
-			"title": "Whatever"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=9SSUQxGjZZ4",
-			"singer": "Godsmack",
-			"title": "Voodoo"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=K3SUPPeuRdU",
-			"singer": "Gogol Bordello",
-			"title": "Wonderlust King"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=NdYWuo9OFAw",
-			"singer": "Goo Goo Dolls",
-			"title": "Iris"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=1V_xRb0x9aw",
-			"singer": "Gorillaz",
-			"title": "Clint Eastwood"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=tjecYugTbIQ",
-			"singer": "Grizzly Bear",
-			"title": "Two Weeks"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=KUwjNBjqR-c",
-			"singer": "Harry Chapin",
-			"title": "Cats In The Cradle"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=mt7G-YU3IL0",
-			"singer": "Harry Styles",
-			"title": "Watermelon Sugar"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=PeMvMNpvB5M",
-			"singer": "Heart",
-			"title": "Barracuda"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ZbHJHPTikQA",
-			"singer": "Herbie Hancock",
-			"title": "Watermelon Man"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=MdxCfAb-ROM",
-			"singer": "House of Pain",
-			"title": "jump around"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=WA_xjBaXor0",
-			"singer": "Incubus",
-			"title": "Anna Molly"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=IgL78BpE5fw",
-			"singer": "jack harlow",
-			"title": "whats poppin"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=mK_TrAkKMhs",
-			"singer": "Jack White",
-			"title": "Just One Drink"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=4JkIs37a2JE",
-			"singer": "Jamiroquai",
-			"title": "Virtual Insanity"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=xh-5FI21s6M",
-			"singer": "Jane's Addiction",
-			"title": "Jane Says"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=DAS5qF1p0Fw",
-			"singer": "Jason Derulo",
-			"title": "Savage Love"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=_PVjcIO4MT4",
-			"singer": "Jimi Hendrix",
-			"title": "Foxy Lady"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=FV-HPOHu8mY",
-			"singer": "Jimmy Eat World",
-			"title": "The Middle"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=_Xyp63MaSBs",
-			"singer": "Johnny Cash",
-			"title": "Folsom Prison Blues"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ZR5XGTpophI",
-			"singer": "Johnny Cash",
-			"title": "A Boy Named Sue"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ru0K8uYEZWw",
-			"singer": "Justin Timberlake",
-			"title": "Can't Stop The Feeling"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=7hx4gdlfamo",
-			"singer": "Kenny Rogers",
-			"title": "The Gambler"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=jRGrNDV2mKc",
-			"singer": "Korn",
-			"title": "Freak On a Leash"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ZU2k-U2Ze0o",
-			"singer": "Korn",
-			"title": "Shoots and Ladders"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=w2Ov5jzm3j8",
-			"singer": "Lil Nas X",
-			"title": "Old Town Road"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=nqAvFx3NxUM",
-			"singer": "Lionel Richie",
-			"title": "All Night Long"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=XaCrQL_8eMY",
-			"singer": "Lizzo",
-			"title": "Juice"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=E2Oe5YKhzCE",
-			"singer": "Local H",
-			"title": "Bound For The Floor"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=DVx8L7a3MuE",
-			"singer": "Looking Glass",
-			"title": "Brandy (You're a Fine Girl)"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=oG6fayQBm9w",
-			"singer": "Lou Reed",
-			"title": "Walk on the wild side"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=yqWUTOP0Z1w",
-			"singer": "Ludacris",
-			"title": "Blueberry Yum Yum"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=JGhoLcsr8GA",
-			"singer": "Macklemore",
-			"title": "Downtown"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=YqeW9_5kURI",
-			"singer": "Major Lazer",
-			"title": "Lean On"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=qq09UkPRdFY",
-			"singer": "Mariah Carey",
-			"title": "Fantasy"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=qBMhtaq1OJU",
-			"singer": "Mariah Carey",
-			"title": "Heartbreaker"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Ypkv0HeUvTc",
-			"singer": "Marilyn Manson",
-			"title": "The Beautiful People"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=lAihDAJX8Ow",
-			"singer": "Mastodon",
-			"title": "Curl of the Burl"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=T2PAkPp0_bY",
-			"singer": "Michael Jackson",
-			"title": "Beat It"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=P_SlAzsXa7E",
-			"singer": "Miike Snow",
-			"title": "Genghis Khan"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=TPhnOKmhbBw",
-			"singer": "Modest Mouse",
-			"title": "Ocean Breathes Salty"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=7XVWR-5fiG0",
-			"singer": "Mutemath",
-			"title": "Typical"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=UgmY2sB71Hc",
-			"singer": "My Chemical Romance",
-			"title": "I'm Not Okay (I Promise)"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=SbyAZQ45uww",
-			"singer": "Nancy Sinatra",
-			"title": "These Boots Are Made for Walkin'"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=1vhFnTjia_I",
-			"singer": "Neil Diamond",
-			"title": "Sweet Caroline"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=hkg-bzTHeAk",
-			"singer": "Neil Young",
-			"title": "Ohio"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=gAEapKFYApU",
-			"singer": "Nelly",
-			"title": "Country Grammar"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=cPAEFnVZVOs",
-			"singer": "New Radicals",
-			"title": "You get What you Give"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ONg4SK39-Kg",
-			"singer": "No Doubt",
-			"title": "Don't speak"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=kvlQgh7aDDA",
-			"singer": "O.A.R",
-			"title": "That was a crazy game of poker"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=6hzrDeceEKc",
-			"singer": "Oasis",
-			"title": "Wonderwall"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=CF-l73qCrgU",
-			"singer": "Of Monsters and Men",
-			"title": "little talks"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=dTAAsCNK7RA",
-			"singer": "OK Go",
-			"title": "Here it goes Again"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=rTVjnBo96Ug",
-			"singer": "Otis Redding",
-			"title": "Sittin' on the dock of the bay"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=fH_OnJk6QqU",
-			"singer": "Panic! at the disco",
-			"title": "high hopes"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=eqWpKATpZg4",
-			"singer": "Papa Roach",
-			"title": "Getting Away With Murder"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=vw4RgDCMMhk",
-			"singer": "Paramore",
-			"title": "Hard Times"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=1VPotzhpAGE",
-			"singer": "Paramore",
-			"title": "Misery Business"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=uq-gYOrU8bA",
-			"singer": "Paul Simon",
-			"title": "You Can Call Me Al"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=1YQt62zsAwM",
-			"singer": "Petey Pablo",
-			"title": "Raise Up"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Zx06XNfDvk0",
-			"singer": "Petula Clark",
-			"title": "Downtown"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=MN3x-kAbgFU",
-			"singer": "Phil Collins",
-			"title": "In the Air Tonight"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=2mKDvp7MavQ",
-			"singer": "Pink Floyd",
-			"title": "Learning to Fly"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=-0kcet4aPpQ",
-			"singer": "Pink Floyd",
-			"title": "Money"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=953PkxFNiko",
-			"singer": "Primus",
-			"title": "My Name Is Mud"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=c2zIAbsp8oM",
-			"singer": "Prince",
-			"title": "Purple Rain"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=BYE4CVhVkhw",
-			"singer": "Puddle Of Mudd",
-			"title": "She Hates Me"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=SxaPbOEm070",
-			"singer": "Punch Brothers",
-			"title": "Movement and Location"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=a01QQZyl-_I",
-			"singer": "Queen",
-			"title": "Under Pressure"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=JsxavPANO8s",
-			"singer": "R.E.M",
-			"title": "It's the end of the world as we know it"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=kfVsfOSbJY0",
-			"singer": "Rebecca Black",
-			"title": "Friday"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=mzJj5-lubeM",
-			"singer": "Red Hot Chili Peppers",
-			"title": "Scar Tissue"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=m1yc8myrv1M",
-			"singer": "Reel Big Fish",
-			"title": "Sell Out"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=wigqKfLWjvM",
-			"singer": "Regina Spektor",
-			"title": "Fidelity"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=zpOULjyy-n8",
-			"singer": "REO Speedwagon",
-			"title": "Can't Fight This Feeling"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=e1MaDYbECSg",
-			"singer": "Rival Sons",
-			"title": "Pressure and Time"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=vCadcBR95oU",
-			"singer": "Salt N Pepa",
-			"title": "Push It"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=5RYY0hwHIRw",
-			"singer": "Sia",
-			"title": "Elastic Heart"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=H6yf1nL4pCM",
-			"singer": "Sisqo",
-			"title": "Thong Song"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=TLcmtBA-W_s",
-			"singer": "Slightly Stoopid",
-			"title": "Collie Man"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=5ZYgIrqELFw",
-			"singer": "Smash Mouth",
-			"title": "All Star"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=OKGJOtRaqMg",
-			"singer": "Snoop Dogg",
-			"title": "Gin and Juice"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=w77oGk4GmrQ",
-			"singer": "Soundgarden",
-			"title": "Spoonman"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=fPUrl_Ov5rw",
-			"singer": "Stone Temple Pilots",
-			"title": "Big Empty"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=9TcztyNlFx0",
-			"singer": "Styx",
-			"title": "Come Sail Away"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=H3ypeugNzYA",
-			"singer": "Sublime",
-			"title": "Doin' Time"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=9EcjWd-O4jI",
-			"singer": "Technotronic",
-			"title": "Pump Up The Jam"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=4-43lLKaqBQ",
-			"singer": "The Animals",
-			"title": "House of the Rising Sun"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=FFqb1I-hiHE",
-			"singer": "The Band",
-			"title": "The Weight"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=gzeOWnnSNjg",
-			"singer": "The Bangles",
-			"title": "Walk Like an Egyptian"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=m2uTFF_3MaA",
-			"singer": "The Beatles",
-			"title": "Yellow Submarine"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=2IbPn5j2YKk",
-			"singer": "The Beatles",
-			"title": "Day Tripper"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=HuS5NuXRb5Y",
-			"singer": "The Beatles",
-			"title": "Eleanor Rigby"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=TLSpj7q6_mM",
-			"singer": "The Black Keys",
-			"title": "Howlin' For You"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=XM0TUtqddpg",
-			"singer": "The Blues Brothers",
-			"title": "Soul Man"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=6Ejga4kJUts",
-			"singer": "The Cranberries",
-			"title": "Zombie"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=vcmjDPDOk7c",
-			"singer": "The Eagles",
-			"title": "Hotel California"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=5zYOKFjpm9s",
-			"singer": "The Flaming Lips",
-			"title": "Do You Realize??"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=aFkcAH-m9W0",
-			"singer": "The Highwaymen",
-			"title": "Highwayman"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=ff0oWESdmH0",
-			"singer": "The Killers",
-			"title": "When You Were Young"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=yuG_jxi37RM",
-			"singer": "The Main Drag",
-			"title": "A Jagged Gorgeous Winter"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=aQ53_yJ7tKw",
-			"singer": "The Mamas & the Papas",
-			"title": "California Dreamin'"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=7iNbnineUCI",
-			"singer": "The Offspring",
-			"title": "The Kids aren't alright"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=tbNlMtqrYS0",
-			"singer": "The Proclaimers",
-			"title": "I'm Gonna Be"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=GgnClrx8N2k",
-			"singer": "The Rolling Stones",
-			"title": "Sympathy For The Devil"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=4aeETEoNfOg",
-			"singer": "The Smashing Pumpkins",
-			"title": "1979"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=swSytFVMHuU",
-			"singer": "The Temptations",
-			"title": "My Girl"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=3s0TkufXA38",
-			"singer": "The Temptations",
-			"title": "Ain't too proud to beg"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=tgB_JwcuPg0",
-			"singer": "The Used",
-			"title": "All That I've Got"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Zzyfcys1aLM",
-			"singer": "The Wallflowers",
-			"title": "one headlight"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=5qSAMtomFvk",
-			"singer": "The Wallflowers",
-			"title": "The Difference"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=fHI8X4OXluQ",
-			"singer": "The Weeknd",
-			"title": "blinding lights"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=mvaflCibP2U",
-			"singer": "The Who",
-			"title": "Baba O'Riley"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=bMPlPJP2brw",
-			"singer": "Van Halen",
-			"title": "Hot for Teacher"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=rog8ou-ZepE",
-			"singer": "Vanilla Ice",
-			"title": "Ice Ice Baby"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=x6zypc_LhnM",
-			"singer": "Vince Guaraldi Trio",
-			"title": "Linus and Lucy"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=JE-dqW4uBEE",
-			"singer": "Violent Femmes",
-			"title": "Blister in the Sun"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=QHapDS2fcFE",
-			"singer": "Violent Femmes",
-			"title": "Add it Up"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=6JCLY0Rlx6Q",
-			"singer": "Walk the Moon",
-			"title": "Shut Up and Dance"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=zYKupOsaJmk",
-			"singer": "Was (Not Was)",
-			"title": "Walk the Dinosaur"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=LHQqqM5sr7g",
-			"singer": "Weezer",
-			"title": "Undone"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=lOfZLb33uCg",
-			"singer": "Weird Al Yankovic",
-			"title": "Amish Paradise"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=E8Nv5hWd-Js",
-			"singer": "Weird Al Yankovic",
-			"title": "Eat It"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=eH3giaIzONA",
-			"singer": "Whitney Houston",
-			"title": "I Wanna Dance with somebody"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=3JWTaaS7LdU",
-			"singer": "Whitney Houston",
-			"title": "I will always love you"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=sT0g16_LQaQ",
-			"singer": "blink-182",
-			"title": "Dammit"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=kZs88WWGDoo",
-			"singer": "blink-182",
-			"title": "M+M's"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=s1tAYmMjLdY",
-			"singer": "blink-182",
-			"title": "I Miss You"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Zb5Sk5x24cs",
-			"singer": "blink-182",
-			"title": "Quarantine"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=9Ht5RZpzPqw",
-			"singer": "blink-182",
-			"title": "All The Small Things"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=k6cZO2DAhDw",
-			"singer": "blink-182",
-			"title": "Stockholm Syndrome"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=xTlNMmZKwpA",
-			"singer": "Cardi B",
-			"title": "I Like It"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=Ypgq0qdgVZA",
-			"singer": "David Bowie",
-			"title": "Fame"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=0mHPrkhE_Tg",
-			"singer": "Demi Lovato",
-			"title": "Sorry Not Sorry"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=5nLA-sTpSH0",
-			"singer": "Elton John",
-			"title": "Rocket Man"
-		},
-		{
-			"url": "https://www.youtube.com/watch?v=7QwUCR1NHpg",
-			"singer": "The Spinners",
-			"title": "The Rubberband Man"
-		}
-	]
+  "songs": [
+    {
+      "url": "https://www.youtube.com/watch?v=4-jBiumYmXk",
+      "singer": "adele",
+      "title": "hello"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hLQl3WQQoQ0",
+      "singer": "adele",
+      "title": "someone like you"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=rYEDA3JcQqw",
+      "singer": "adele",
+      "title": "rolling in the deep"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7JJfJgyHYwU",
+      "singer": "rixton",
+      "title": "me and my broken heart"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SR6iYWJxHqs",
+      "singer": "bruno mars",
+      "title": "grenade"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=pXRviuL6vMY",
+      "singer": "twenty one pilots",
+      "title": "stressed out"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fLexgOxsZu0",
+      "singer": "bruno mars",
+      "title": "the lazy song"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=QK8mJJJvaes",
+      "singer": "macklemore",
+      "title": "thrift shop"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fWNaR-rxAic",
+      "singer": "carly rae jepsen",
+      "title": "call me maybe"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lDK9QqIzhwk",
+      "singer": "bon jovi",
+      "title": "livin on a prayer"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dKez38i5h14",
+      "singer": "gorillaz",
+      "title": "feel good inc"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0J2QdDbelmY",
+      "singer": "the white stripes",
+      "title": "seven nation army"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZbytR2avo-0",
+      "singer": "eminem",
+      "title": "without me"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eVTXPUF4Oz4",
+      "singer": "linkin park",
+      "title": "in the end"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kXYiU_JCYtU",
+      "singer": "linkin park",
+      "title": "numb"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hTWKbfoikeg",
+      "singer": "nirvana",
+      "title": "smells like teen spirit"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=y1nM4OKvoXw",
+      "singer": "flo rida",
+      "title": "low"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1CBN9fKeVB4",
+      "singer": "panic at the disco",
+      "title": "i write sins not tragedies"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lOxb_SW4Cfg",
+      "singer": "kanye west",
+      "title": "gold digger"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=u5uSlUKBEDc",
+      "singer": "kesha",
+      "title": "tik tok"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=r5EXKDlf44M",
+      "singer": "green day",
+      "title": "boulevard of broken dreams"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3JV74i4yvcA",
+      "singer": "train",
+      "title": "hey soul sister"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=opPV1-IUmGw",
+      "singer": "coldplay",
+      "title": "viva la vida"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=EQ2T-Tw_drE",
+      "singer": "taio cruz",
+      "title": "dynamite"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ADIyIlO-_Ug",
+      "singer": "snoop dogg",
+      "title": "the next episode"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=F57P9C4SAW4",
+      "singer": "katy perry",
+      "title": "california gurls"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8aRor905cCw",
+      "singer": "bruno mars",
+      "title": "billionaire"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SgM3r8xKfGE",
+      "singer": "flo rida",
+      "title": "club cant handle me"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Wx9XYrRpHjo",
+      "singer": "mike posner",
+      "title": "cooler than me"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=F3CIbk3At_8",
+      "singer": "m.i.a",
+      "title": "paper planes"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ViwtNLUqkMY",
+      "singer": "beyonce",
+      "title": "crazy in love"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Fi8rsCncwF8",
+      "singer": "outkast",
+      "title": "hey ya"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=nlcIKh6sBtc",
+      "singer": "lorde",
+      "title": "royals"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XNX8z0A3XVM",
+      "singer": "drake",
+      "title": "hotline bling"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lWD9wVPwhH4",
+      "singer": "50 cent",
+      "title": "in the club"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=uCRT8IItGpw",
+      "singer": "britney spears",
+      "title": "toxic"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oRAuQM3pl-Y",
+      "singer": "nelly",
+      "title": "hot in here"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MHU6vvsTnbI",
+      "singer": "maroon 5",
+      "title": "this love"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Y4QGPWLY-EM",
+      "singer": "eiffel 65",
+      "title": "blue"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=i4YutyVP7ig",
+      "singer": "kelis",
+      "title": "milkshake"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=_G7QmqDLpTo",
+      "singer": "franz ferdinand",
+      "title": "take me out"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HrQsGeKN6qk",
+      "singer": "system of a down",
+      "title": "chop suey"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6Un9HLDCTCs",
+      "singer": "eminem",
+      "title": "lose yourself"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=96MiYk9VYvc",
+      "singer": "evanescence",
+      "title": "bring me to life"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=GjyltncPu7I",
+      "singer": "lady gaga",
+      "title": "just dance"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-zuviud2HHQ",
+      "singer": "cascada",
+      "title": "everytime we touch"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5pVKZeSoAp0",
+      "singer": "one republic",
+      "title": "apologize"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=IGuSsEfZwDs",
+      "singer": "kanye west",
+      "title": "touch the sky"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=UaCHLRB-4Oo",
+      "singer": "sean kingston",
+      "title": "beautiful girls"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=uSD4vsh1zDA",
+      "singer": "black eyed peas",
+      "title": "i gotta feeling"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9g5m3z24jJM",
+      "singer": "fun",
+      "title": "we are young"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=225K-LR62Ek",
+      "singer": "backstreet boys",
+      "title": "i want it that way"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=E50c3_9V-Gg",
+      "singer": "mgmt",
+      "title": "kids"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OZnBt2W48A0",
+      "singer": "snoop dogg",
+      "title": "drop it like its hot"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=a1BS7XnEZqc",
+      "singer": "green day",
+      "title": "american idiot"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WcBfg4NmqzA",
+      "singer": "arctic monkeys",
+      "title": "mardy bum"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=P9MwxdtzrvA",
+      "singer": "pink",
+      "title": "so what"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=_ovdm2yX4MA",
+      "singer": "avicii",
+      "title": "levels"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gkBvuhBBhvA",
+      "singer": "usher",
+      "title": "omg"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JiUNTdFX8G8",
+      "singer": "rihanna",
+      "title": "love the way you lie"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xR6lFaPTxh0",
+      "singer": "wiz khalifa",
+      "title": "black and yellow"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=NNM2kEBGiRs",
+      "singer": "maroon 5",
+      "title": "moves like jagger"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Q4Y-FbeCX14",
+      "singer": "kelly clarkson",
+      "title": "stronger"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aS85AvLl9Ik",
+      "singer": "flo rida",
+      "title": "whistle"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=qV0LHCHf-pE",
+      "singer": "baauer",
+      "title": "harlem shake"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ziN7Y1M1v8s",
+      "singer": "bruno mars",
+      "title": "uptown funk"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8wP2AsnTfac",
+      "singer": "the weeknd",
+      "title": "cant feel my face"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Coq-OlEdZQ8",
+      "singer": "lmfao",
+      "title": "party rock anthem"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=yG60iRJwmfA",
+      "singer": "jonas brothers",
+      "title": "sucker"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BKLVpDTZOPQ",
+      "singer": "Foster The People",
+      "title": "Sit Next to Me"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Ys3FvbIybW4",
+      "singer": "Brockhampton",
+      "title": "Face"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VcyFfcJbyeM",
+      "singer": "Lil Uzi Vert",
+      "title": "XO Tour Llif3"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ClhLNUPqv8Q",
+      "singer": "Dua Lipa",
+      "title": "New Rules"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AMtN4sOvhqY",
+      "singer": "Taylor Swift",
+      "title": "Lover"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5gBeLN2Jkng",
+      "singer": "Charlie Puth",
+      "title": "Attention"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=yNk8OoBpQMI",
+      "singer": "J Cole",
+      "title": "No Role Modelz"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9Imk7kIpgos",
+      "singer": "Sam Smith",
+      "title": "Stay With Me"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZBuPhinZVzk",
+      "singer": "Amine",
+      "title": "Caroline"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ijl_cfyQqLA",
+      "singer": "Maggie Rogers",
+      "title": "Fallingwater"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7pzOBI3PD8E",
+      "singer": "The Neighbourhood",
+      "title": "Sweater Weather"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MrbHZkHimbo",
+      "singer": "King Princess",
+      "title": "1950"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Tm6-SEfRoBA",
+      "singer": "Sia",
+      "title": "Chandelier"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0i1o9lSUuI8",
+      "singer": "Taylor Swift",
+      "title": "Delicate"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2RAI2IEtbFs",
+      "singer": "Disclosure",
+      "title": "Latch"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=8o5BHH9U2Mg",
+      "singer": "Robyn",
+      "title": "Missing U"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kqaGZYDGcUw",
+      "singer": "rihanna",
+      "title": "We Found Love"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1S5NDIc1_3U",
+      "singer": "Halsey",
+      "title": "Gasoline"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VYOjWnS4cMY",
+      "singer": "Childish Gambino",
+      "title": "This Is America"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sPQrcSo2ee4",
+      "singer": "Alabama Shakes",
+      "title": "Dont Wanna Fight"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=LNAwPvfF2Os",
+      "singer": "Janelle Monae",
+      "title": "Make Me Feel"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Cf6cR6Nve70",
+      "singer": "Ariana Grande",
+      "title": "God Is a Woman"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XnbsIl2BnWw",
+      "singer": "frank ocean",
+      "title": "Chanel"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=t0imaSCnSuA",
+      "singer": "Hozier",
+      "title": "Take Me to Church"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=pNt0w1L2wSY",
+      "singer": "Kanye West",
+      "title": "Black Skinhead"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5ytzbr4SiKE",
+      "singer": "Luis Fonsi",
+      "title": "Despacito"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=z17hTy-Ne5c",
+      "singer": "Rae Sremmurd",
+      "title": "Black Beatles"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kfyrOszCbRk",
+      "singer": "beyonce",
+      "title": "Hold Up"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=k32XJyU2UKA",
+      "singer": "Travis Scott",
+      "title": "Antidote"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Adtadg-UBYA",
+      "singer": "Post Malone",
+      "title": "Congratulations"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Gx6xnVQuFzw",
+      "singer": "Kendrick Lamar",
+      "title": "Humble"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=YV3ExBDBv_I",
+      "singer": "David Bowie",
+      "title": "Blackstar"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=87xa7w2QymA",
+      "singer": "Childish Gambino",
+      "title": "Redbone"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fQ17tnRrA8k",
+      "singer": "Arctic Monkeys",
+      "title": "Do I Wanna Know?"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=EbB4PP4HknU",
+      "singer": "Nicki Minaj",
+      "title": "Super Bass"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4bFrM_7CdAM",
+      "singer": "Lykke Li",
+      "title": "I Follow Rivers"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZwyiZLgiP6w",
+      "singer": "Travis Scott",
+      "title": "Sicko Mode"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4-TbQnONe_w",
+      "singer": "billie eilish",
+      "title": "Bad Guy"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=DSxg7pNYQhI",
+      "singer": "ac/dc",
+      "title": "back in black"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=axAtWjn3MfI",
+      "singer": "queen",
+      "title": "Bohemian Rhapsody"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1w7OgIMMRc4",
+      "singer": "Guns N Roses",
+      "title": "Sweet Child O' Mine"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9Q4IO19E8Kg",
+      "singer": "Damian Marley",
+      "title": "Welcome To Jamrock"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=tux7eKFZn30",
+      "singer": "Amy Winehouse",
+      "title": "Back to Black"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ytBR7ET_6uU",
+      "singer": "Owl City",
+      "title": "Fireflies"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lCiZ8pMnLV4",
+      "singer": "Lady Gaga",
+      "title": "Poker Face"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oGTBax-Cu4Q",
+      "singer": "Flo Rida",
+      "title": "Right Round"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Wa6ZkaJfYso",
+      "singer": "Eminem",
+      "title": "Crack a Bottle"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Nn5IvIwBBec",
+      "singer": "Kelly Clarkson",
+      "title": "My Life Would Suck Without You"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kdATGDEjAzs",
+      "singer": "Usher",
+      "title": "Love In This Club"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=We1AQetsAx4",
+      "singer": "Soulja Boy",
+      "title": "Crank That"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=PoaT6WXUV_M",
+      "singer": "Plain White T's",
+      "title": "Hey there delilah"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=tst-pb3YCEc",
+      "singer": "Rihanna",
+      "title": "Umbrella"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ELIw88IeSeE",
+      "singer": "Akon",
+      "title": "Don't Matter"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=foaLW5DGhpI",
+      "singer": "Beyonce",
+      "title": "Irreplaceable"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=FCR9qFSgZYE",
+      "singer": "Nelly furtado",
+      "title": "promiscuous"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=EPKHC59Fpko",
+      "singer": "Shakira",
+      "title": "Hips Don't Lie"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=x1TsfShR5ZY",
+      "singer": "Justin Timberlake",
+      "title": "My Love"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=RmNTAvnSais",
+      "singer": "Daniel Powter",
+      "title": "Bad Day"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VLz6aIW2svk",
+      "singer": "Chris Brown",
+      "title": "Run It"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9t7Y3puRKM0",
+      "singer": "Mariah Carey",
+      "title": "We belong together"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=IZKBa6bvUjo",
+      "singer": "50 Cent",
+      "title": "Candy Shop"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=B8FTyEdLjqA",
+      "singer": "Mario",
+      "title": "Let Me Love You"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=GTpkYtYYi7o",
+      "singer": "Usher",
+      "title": "My Boo"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eYaSNZRbFsA",
+      "singer": "Eminem",
+      "title": "Not Afraid"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=z6wjKlZjYfQ",
+      "singer": "Bruno Mars",
+      "title": "Nothin' on You"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lPTkBcP1wCM",
+      "singer": "Rihanna",
+      "title": "Rude Boy"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=n1lfYh-aUk0",
+      "singer": "Katy Perry",
+      "title": "Firework"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=GvgJEznqtms",
+      "singer": "far east movement",
+      "title": "Like A G6"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0BsLd4Y060Q",
+      "singer": "Lady Gaga",
+      "title": "Born This Way"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=wyx6JDQCslE",
+      "singer": "LMFAO",
+      "title": "Sexy And I Know It"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Odq6cZulKA8",
+      "singer": "Bruno Mars",
+      "title": "Locked Out Of Heaven"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cpzO4OGP9q0",
+      "singer": "Miley Cyrus",
+      "title": "Wrecking Ball"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cmCDqX3ngfA",
+      "singer": "Pharrell Williams",
+      "title": "Happy"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=73_DOquGBD4",
+      "singer": "John Legend",
+      "title": "All of Me"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=IlwIcTsmERw",
+      "singer": "Magic",
+      "title": "Rude"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=v-F2jdXMywI",
+      "singer": "Taylor Swift",
+      "title": "Blank Space"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=VQspRB0ztMw",
+      "singer": "OMI",
+      "title": "Cheerleader"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=NywWB67Z7zQ",
+      "singer": "Justin Bieber",
+      "title": "What Do You Mean?"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3MQMQTBTVHU",
+      "singer": "The Weeknd",
+      "title": "The Hills"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=YO-XGWSvZB0",
+      "singer": "Zayn",
+      "title": "PillowTalk"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4NJlUribp3c",
+      "singer": "Desiigner",
+      "title": "Panda"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=570tFRoRR0A",
+      "singer": "Pink",
+      "title": "Raise your Glass"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Nj2U6rhnucI",
+      "singer": "dua lipa",
+      "title": "break my heart"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=83xBPCw5hh4",
+      "singer": "dababy",
+      "title": "Rockstar"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JwzIGTlXOHM",
+      "singer": "justin bieber",
+      "title": "yummy"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fwK7ggA3-bU",
+      "singer": "maroon 5",
+      "title": "one more night"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=pPw_izFr5PA",
+      "singer": "6ix9ine",
+      "title": "GOOBA"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=UYwF-jdcVjY",
+      "singer": "post malone",
+      "title": "better now"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fEUS_NP5Qzo",
+      "singer": "blackbear",
+      "title": "chateau"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WagT4pdaPG8",
+      "singer": "CMG",
+      "title": "stonner"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=CxnaPa8ohmM",
+      "singer": "g-eazy",
+      "title": "i mean it"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cwQgjq0mCdE",
+      "singer": "kanye west",
+      "title": "i love it"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=QYh6mYIJG2Y",
+      "singer": "ariana grande",
+      "title": "7 rings"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6axOY4PBusk",
+      "singer": "nofx",
+      "title": "linoleum",
+      "addedBy": "John Wise"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=jeJUaBC_rhc",
+      "singer": "johnny cash",
+      "title": "hey porter",
+      "addedBy": "John Wise"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=KnnHprUGKF0",
+      "singer": "jimmy dean",
+      "title": "big bad john",
+      "addedBy": "John Wise"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4NhKWZpkw1Q",
+      "singer": "sia",
+      "title": "big girls cry",
+      "addedBy": "Dayton"
+    },
+    {
+      "url": "https://youtu.be/SNdcFPjGsm8",
+      "singer": "the beatles",
+      "title": "revolution 9",
+      "addedBy": "CharlesKaup"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SUFSB2plwzM",
+      "singer": "311",
+      "title": "Amber"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=v2AC41dglnM",
+      "singer": "ac/dc",
+      "title": "Thunderstruck"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=etAIpkdhU9Q",
+      "singer": "ac/dc",
+      "title": "Hells Bells"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=qsaTFcXVCNU",
+      "singer": "ac/dc",
+      "title": "For Those About to Rock"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=EEpwhkE5zZg",
+      "singer": "ac/dc",
+      "title": "Ride On"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fNWqSez_6VA",
+      "singer": "Al Green",
+      "title": "Let's Stay Together"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sThaCXe1eJU",
+      "singer": "Alanis Morissette",
+      "title": "Ironic"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=TAqZb52sgpU",
+      "singer": "Alice In Chains",
+      "title": "Man in the Box"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7A1utb0NrHU",
+      "singer": "Anderson .Paak",
+      "title": "Tints"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cmSbXsFE3l8",
+      "singer": "Anna Kendrick",
+      "title": "Cups"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=IcrbM1l_BoI",
+      "singer": "avicii",
+      "title": "Wake Me Up"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=12kcpP-8jfM",
+      "singer": "Bad Religion",
+      "title": "American Jesus"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=LGMQjTwSRSQ",
+      "singer": "Bad Religion",
+      "title": "I Want to Conquer the World"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9_tczaH_URw",
+      "singer": "Bad Religion",
+      "title": "We're Only Gonna Die"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=DE-iQ5-DL4k",
+      "singer": "Bad Religion",
+      "title": "No Control"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=snZcn3Qt1xI",
+      "singer": "Bare Naked Ladies",
+      "title": "One Week"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ru3gH27Fn6E",
+      "singer": "Beastie Boys",
+      "title": "So Whatcha Want"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=DGRemW4bEgs",
+      "singer": "Beastie Boys",
+      "title": "Fight For Your Right"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ln-Jq6X6p-g",
+      "singer": "Beastie Boys",
+      "title": "Intergalactic"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=YgSPaXgAdzE",
+      "singer": "Beck",
+      "title": "Loser"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oaLDut30Br0",
+      "singer": "Bill Withers",
+      "title": "Lovely Day"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eFTLKWw542g",
+      "singer": "Billy Joel",
+      "title": "We Didn't Start the Fire"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gxEPV4kolz0",
+      "singer": "Billy Joel",
+      "title": "Piano Man"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aqP4-dUMkMc",
+      "singer": "Billy Talent",
+      "title": "Surrender"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=p0mRIhK9seg",
+      "singer": "Bjork",
+      "title": "Human Behavior"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=DT4kQlM5xuE",
+      "singer": "Blanco Brown",
+      "title": "The Git Up"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WGU_4-5RaxU",
+      "singer": "Blondie",
+      "title": "Heart Of Glass"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SSbBvKaM6sk",
+      "singer": "Blur",
+      "title": "Song 2"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=d-diB65scQU",
+      "singer": "Bobby McFerrin",
+      "title": "Don't Worry Be Happy"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=s86K-p089R8",
+      "singer": "bon jovi",
+      "title": "Runaway"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SRvCvsRp5ho",
+      "singer": "bon jovi",
+      "title": "Wanted Dead Or Alive"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=NvR60Wg9R7Q",
+      "singer": "bon jovi",
+      "title": "Bed of Roses"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=RSJbYWPEaxw",
+      "singer": "bon jovi",
+      "title": "Hallelujah"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MfmYCM4CS8o",
+      "singer": "bon jovi",
+      "title": "Blaze of Glory"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0oox9bJaGJ8",
+      "singer": "Booker T & The MG's",
+      "title": "Green Onions"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Rciee-oQLoI",
+      "singer": "Boys II Men",
+      "title": "Motownphilly"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AolstL1_MhE",
+      "singer": "Bring Me The Horizon",
+      "title": "Obey"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=racmy7Y9P4M",
+      "singer": "Bring Me The Horizon",
+      "title": "Parasite Eve"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=B9wvTuDC-H0",
+      "singer": "Bring Me The Horizon",
+      "title": "Ludens"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cOeKidp-iWo",
+      "singer": "Bruce Hornsby",
+      "title": "The Way It Is"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1eD-8NTwP9I",
+      "singer": "Buffalo Springfield",
+      "title": "For What It's Worth"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=KxprPYJo3yY",
+      "singer": "Busta Rhymes",
+      "title": "Dangerous"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Q8O_g7fXV9o",
+      "singer": "Cake",
+      "title": "Thrills"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=KtqQYPUJk8E",
+      "singer": "Calvin Harris",
+      "title": "Feel So Close"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MZjAantupsA",
+      "singer": "Cameo",
+      "title": "Word Up"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=47dtFZ8CFo8",
+      "singer": "Capital Cities",
+      "title": "Safe and Sound"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=LHUKKrcXfJs",
+      "singer": "CHVRCHES",
+      "title": "Get Out"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=n0H3RlaQVrM",
+      "singer": "Coheed and Cambria",
+      "title": "Welcome Home"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2LJg9UvoKvk",
+      "singer": "Coolio",
+      "title": "Gangsta's Paradise"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eTeg1txDv8w",
+      "singer": "Crash Test Dummies",
+      "title": "Mmm Mmm Mmm Mmm"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=nrm2B0lhvYc",
+      "singer": "Dead Kennedys",
+      "title": "Holiday in Cambodia"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=jrWflCJPM4w",
+      "singer": "Dead Kennedys",
+      "title": "California Uber Alles"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4ncqvLktdT8",
+      "singer": "Dead Kennedys",
+      "title": "Too Drunk to Fuck"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dTAReklsJnw",
+      "singer": "Deee Lite",
+      "title": "Groove Is In The Heart"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=RaG8faaFUMM",
+      "singer": "Def Leppard",
+      "title": "Pour Some Sugar On Me"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kHue-HaXXzg",
+      "singer": "Demi Lovato",
+      "title": "Let It Go"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fV7o0KG4WeQ",
+      "singer": "Digital Underground",
+      "title": "The Humpty Dance"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JXkN3nJyWEA",
+      "singer": "Dinosaur Jr",
+      "title": "Feel The Pain"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=wv-34w8kGPM",
+      "singer": "Divinyls",
+      "title": "I Touch Myself"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=PAzH-YAlFYc",
+      "singer": "DNCE",
+      "title": "Cake By The Ocean"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=x-64CaD8GXw",
+      "singer": "Dropkick Murphies",
+      "title": "I'm Shipping up to Boston"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=tDl3bdE3YQA",
+      "singer": "Edie Brickell & New Bohemians",
+      "title": "What I Am"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0NKUpo_xKyQ",
+      "singer": "Ellie Goulding",
+      "title": "Lights"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=S-cbOl96RFM",
+      "singer": "Etta James",
+      "title": "At Last"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2iijmj5nB6I",
+      "singer": "Fall of Troy",
+      "title": "FCPREMIX"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ltYq-jalYm0",
+      "singer": "Feist",
+      "title": "My Moon My Man"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=NbxqtbqyoRk",
+      "singer": "Fiona Apple",
+      "title": "Fast As You Can"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eBG7P-K-r1Y",
+      "singer": "Foo Fighters",
+      "title": "Everlong"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kgBKS4JCsec",
+      "singer": "Foxy Shazam",
+      "title": "Holy Touch"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Om_VWBua0_M",
+      "singer": "Foxy Shazam",
+      "title": "Oh Lord"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MPlb9HoOCxs",
+      "singer": "Fugees",
+      "title": "Fu-Gee-La"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=q7yCLn-O-Y0",
+      "singer": "fun",
+      "title": "Carry On"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=AIoaiTwLk6I",
+      "singer": "fun",
+      "title": "All the Pretty Girls"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0KRXvtfE7Ag",
+      "singer": "fun",
+      "title": "Why Am I The One"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=QxTBtHsh408",
+      "singer": "fun",
+      "title": "Some Nights"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6nldpjPbGqg",
+      "singer": "GERARDO",
+      "title": "Rico Suave"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ME3Ahe8z16k",
+      "singer": "Godsmack",
+      "title": "Whatever"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9SSUQxGjZZ4",
+      "singer": "Godsmack",
+      "title": "Voodoo"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=K3SUPPeuRdU",
+      "singer": "Gogol Bordello",
+      "title": "Wonderlust King"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=NdYWuo9OFAw",
+      "singer": "Goo Goo Dolls",
+      "title": "Iris"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1V_xRb0x9aw",
+      "singer": "Gorillaz",
+      "title": "Clint Eastwood"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=tjecYugTbIQ",
+      "singer": "Grizzly Bear",
+      "title": "Two Weeks"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=KUwjNBjqR-c",
+      "singer": "Harry Chapin",
+      "title": "Cats In The Cradle"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mt7G-YU3IL0",
+      "singer": "Harry Styles",
+      "title": "Watermelon Sugar"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=PeMvMNpvB5M",
+      "singer": "Heart",
+      "title": "Barracuda"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZbHJHPTikQA",
+      "singer": "Herbie Hancock",
+      "title": "Watermelon Man"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MdxCfAb-ROM",
+      "singer": "House of Pain",
+      "title": "jump around"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=WA_xjBaXor0",
+      "singer": "Incubus",
+      "title": "Anna Molly"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=IgL78BpE5fw",
+      "singer": "jack harlow",
+      "title": "whats poppin"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mK_TrAkKMhs",
+      "singer": "Jack White",
+      "title": "Just One Drink"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4JkIs37a2JE",
+      "singer": "Jamiroquai",
+      "title": "Virtual Insanity"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xh-5FI21s6M",
+      "singer": "Jane's Addiction",
+      "title": "Jane Says"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=DAS5qF1p0Fw",
+      "singer": "Jason Derulo",
+      "title": "Savage Love"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=_PVjcIO4MT4",
+      "singer": "Jimi Hendrix",
+      "title": "Foxy Lady"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=FV-HPOHu8mY",
+      "singer": "Jimmy Eat World",
+      "title": "The Middle"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=_Xyp63MaSBs",
+      "singer": "Johnny Cash",
+      "title": "Folsom Prison Blues"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZR5XGTpophI",
+      "singer": "Johnny Cash",
+      "title": "A Boy Named Sue"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ru0K8uYEZWw",
+      "singer": "Justin Timberlake",
+      "title": "Can't Stop The Feeling"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7hx4gdlfamo",
+      "singer": "Kenny Rogers",
+      "title": "The Gambler"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=jRGrNDV2mKc",
+      "singer": "Korn",
+      "title": "Freak On a Leash"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ZU2k-U2Ze0o",
+      "singer": "Korn",
+      "title": "Shoots and Ladders"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=w2Ov5jzm3j8",
+      "singer": "Lil Nas X",
+      "title": "Old Town Road"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=nqAvFx3NxUM",
+      "singer": "Lionel Richie",
+      "title": "All Night Long"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XaCrQL_8eMY",
+      "singer": "Lizzo",
+      "title": "Juice"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=E2Oe5YKhzCE",
+      "singer": "Local H",
+      "title": "Bound For The Floor"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=DVx8L7a3MuE",
+      "singer": "Looking Glass",
+      "title": "Brandy (You're a Fine Girl)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=oG6fayQBm9w",
+      "singer": "Lou Reed",
+      "title": "Walk on the wild side"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=yqWUTOP0Z1w",
+      "singer": "Ludacris",
+      "title": "Blueberry Yum Yum"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JGhoLcsr8GA",
+      "singer": "Macklemore",
+      "title": "Downtown"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=YqeW9_5kURI",
+      "singer": "Major Lazer",
+      "title": "Lean On"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=qq09UkPRdFY",
+      "singer": "Mariah Carey",
+      "title": "Fantasy"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=qBMhtaq1OJU",
+      "singer": "Mariah Carey",
+      "title": "Heartbreaker"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Ypkv0HeUvTc",
+      "singer": "Marilyn Manson",
+      "title": "The Beautiful People"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lAihDAJX8Ow",
+      "singer": "Mastodon",
+      "title": "Curl of the Burl"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=T2PAkPp0_bY",
+      "singer": "Michael Jackson",
+      "title": "Beat It"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=P_SlAzsXa7E",
+      "singer": "Miike Snow",
+      "title": "Genghis Khan"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=TPhnOKmhbBw",
+      "singer": "Modest Mouse",
+      "title": "Ocean Breathes Salty"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7XVWR-5fiG0",
+      "singer": "Mutemath",
+      "title": "Typical"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=UgmY2sB71Hc",
+      "singer": "My Chemical Romance",
+      "title": "I'm Not Okay (I Promise)"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SbyAZQ45uww",
+      "singer": "Nancy Sinatra",
+      "title": "These Boots Are Made for Walkin'"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1vhFnTjia_I",
+      "singer": "Neil Diamond",
+      "title": "Sweet Caroline"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=hkg-bzTHeAk",
+      "singer": "Neil Young",
+      "title": "Ohio"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gAEapKFYApU",
+      "singer": "Nelly",
+      "title": "Country Grammar"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=cPAEFnVZVOs",
+      "singer": "New Radicals",
+      "title": "You get What you Give"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ONg4SK39-Kg",
+      "singer": "No Doubt",
+      "title": "Don't speak"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kvlQgh7aDDA",
+      "singer": "O.A.R",
+      "title": "That was a crazy game of poker"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6hzrDeceEKc",
+      "singer": "Oasis",
+      "title": "Wonderwall"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=CF-l73qCrgU",
+      "singer": "Of Monsters and Men",
+      "title": "little talks"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dTAAsCNK7RA",
+      "singer": "OK Go",
+      "title": "Here it goes Again"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=rTVjnBo96Ug",
+      "singer": "Otis Redding",
+      "title": "Sittin' on the dock of the bay"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fH_OnJk6QqU",
+      "singer": "Panic! at the disco",
+      "title": "high hopes"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eqWpKATpZg4",
+      "singer": "Papa Roach",
+      "title": "Getting Away With Murder"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=vw4RgDCMMhk",
+      "singer": "Paramore",
+      "title": "Hard Times"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1VPotzhpAGE",
+      "singer": "Paramore",
+      "title": "Misery Business"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=uq-gYOrU8bA",
+      "singer": "Paul Simon",
+      "title": "You Can Call Me Al"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=1YQt62zsAwM",
+      "singer": "Petey Pablo",
+      "title": "Raise Up"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Zx06XNfDvk0",
+      "singer": "Petula Clark",
+      "title": "Downtown"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=MN3x-kAbgFU",
+      "singer": "Phil Collins",
+      "title": "In the Air Tonight"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2mKDvp7MavQ",
+      "singer": "Pink Floyd",
+      "title": "Learning to Fly"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=-0kcet4aPpQ",
+      "singer": "Pink Floyd",
+      "title": "Money"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=953PkxFNiko",
+      "singer": "Primus",
+      "title": "My Name Is Mud"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=c2zIAbsp8oM",
+      "singer": "Prince",
+      "title": "Purple Rain"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=BYE4CVhVkhw",
+      "singer": "Puddle Of Mudd",
+      "title": "She Hates Me"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=SxaPbOEm070",
+      "singer": "Punch Brothers",
+      "title": "Movement and Location"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=a01QQZyl-_I",
+      "singer": "Queen",
+      "title": "Under Pressure"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JsxavPANO8s",
+      "singer": "R.E.M",
+      "title": "It's the end of the world as we know it"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kfVsfOSbJY0",
+      "singer": "Rebecca Black",
+      "title": "Friday"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mzJj5-lubeM",
+      "singer": "Red Hot Chili Peppers",
+      "title": "Scar Tissue"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=m1yc8myrv1M",
+      "singer": "Reel Big Fish",
+      "title": "Sell Out"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=wigqKfLWjvM",
+      "singer": "Regina Spektor",
+      "title": "Fidelity"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=zpOULjyy-n8",
+      "singer": "REO Speedwagon",
+      "title": "Can't Fight This Feeling"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=e1MaDYbECSg",
+      "singer": "Rival Sons",
+      "title": "Pressure and Time"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=vCadcBR95oU",
+      "singer": "Salt N Pepa",
+      "title": "Push It"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5RYY0hwHIRw",
+      "singer": "Sia",
+      "title": "Elastic Heart"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=H6yf1nL4pCM",
+      "singer": "Sisqo",
+      "title": "Thong Song"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=TLcmtBA-W_s",
+      "singer": "Slightly Stoopid",
+      "title": "Collie Man"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5ZYgIrqELFw",
+      "singer": "Smash Mouth",
+      "title": "All Star"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=OKGJOtRaqMg",
+      "singer": "Snoop Dogg",
+      "title": "Gin and Juice"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=w77oGk4GmrQ",
+      "singer": "Soundgarden",
+      "title": "Spoonman"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fPUrl_Ov5rw",
+      "singer": "Stone Temple Pilots",
+      "title": "Big Empty"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9TcztyNlFx0",
+      "singer": "Styx",
+      "title": "Come Sail Away"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=H3ypeugNzYA",
+      "singer": "Sublime",
+      "title": "Doin' Time"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9EcjWd-O4jI",
+      "singer": "Technotronic",
+      "title": "Pump Up The Jam"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4-43lLKaqBQ",
+      "singer": "The Animals",
+      "title": "House of the Rising Sun"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=FFqb1I-hiHE",
+      "singer": "The Band",
+      "title": "The Weight"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gzeOWnnSNjg",
+      "singer": "The Bangles",
+      "title": "Walk Like an Egyptian"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=m2uTFF_3MaA",
+      "singer": "The Beatles",
+      "title": "Yellow Submarine"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=2IbPn5j2YKk",
+      "singer": "The Beatles",
+      "title": "Day Tripper"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HuS5NuXRb5Y",
+      "singer": "The Beatles",
+      "title": "Eleanor Rigby"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=TLSpj7q6_mM",
+      "singer": "The Black Keys",
+      "title": "Howlin' For You"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=XM0TUtqddpg",
+      "singer": "The Blues Brothers",
+      "title": "Soul Man"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6Ejga4kJUts",
+      "singer": "The Cranberries",
+      "title": "Zombie"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=vcmjDPDOk7c",
+      "singer": "The Eagles",
+      "title": "Hotel California"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5zYOKFjpm9s",
+      "singer": "The Flaming Lips",
+      "title": "Do You Realize??"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aFkcAH-m9W0",
+      "singer": "The Highwaymen",
+      "title": "Highwayman"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=ff0oWESdmH0",
+      "singer": "The Killers",
+      "title": "When You Were Young"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=yuG_jxi37RM",
+      "singer": "The Main Drag",
+      "title": "A Jagged Gorgeous Winter"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=aQ53_yJ7tKw",
+      "singer": "The Mamas & the Papas",
+      "title": "California Dreamin'"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7iNbnineUCI",
+      "singer": "The Offspring",
+      "title": "The Kids aren't alright"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=tbNlMtqrYS0",
+      "singer": "The Proclaimers",
+      "title": "I'm Gonna Be"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=GgnClrx8N2k",
+      "singer": "The Rolling Stones",
+      "title": "Sympathy For The Devil"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=4aeETEoNfOg",
+      "singer": "The Smashing Pumpkins",
+      "title": "1979"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=swSytFVMHuU",
+      "singer": "The Temptations",
+      "title": "My Girl"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3s0TkufXA38",
+      "singer": "The Temptations",
+      "title": "Ain't too proud to beg"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=tgB_JwcuPg0",
+      "singer": "The Used",
+      "title": "All That I've Got"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Zzyfcys1aLM",
+      "singer": "The Wallflowers",
+      "title": "one headlight"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5qSAMtomFvk",
+      "singer": "The Wallflowers",
+      "title": "The Difference"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=fHI8X4OXluQ",
+      "singer": "The Weeknd",
+      "title": "blinding lights"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=mvaflCibP2U",
+      "singer": "The Who",
+      "title": "Baba O'Riley"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=bMPlPJP2brw",
+      "singer": "Van Halen",
+      "title": "Hot for Teacher"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=rog8ou-ZepE",
+      "singer": "Vanilla Ice",
+      "title": "Ice Ice Baby"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=x6zypc_LhnM",
+      "singer": "Vince Guaraldi Trio",
+      "title": "Linus and Lucy"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=JE-dqW4uBEE",
+      "singer": "Violent Femmes",
+      "title": "Blister in the Sun"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=QHapDS2fcFE",
+      "singer": "Violent Femmes",
+      "title": "Add it Up"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=6JCLY0Rlx6Q",
+      "singer": "Walk the Moon",
+      "title": "Shut Up and Dance"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=zYKupOsaJmk",
+      "singer": "Was (Not Was)",
+      "title": "Walk the Dinosaur"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=LHQqqM5sr7g",
+      "singer": "Weezer",
+      "title": "Undone"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=lOfZLb33uCg",
+      "singer": "Weird Al Yankovic",
+      "title": "Amish Paradise"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=E8Nv5hWd-Js",
+      "singer": "Weird Al Yankovic",
+      "title": "Eat It"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=eH3giaIzONA",
+      "singer": "Whitney Houston",
+      "title": "I Wanna Dance with somebody"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=3JWTaaS7LdU",
+      "singer": "Whitney Houston",
+      "title": "I will always love you"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sT0g16_LQaQ",
+      "singer": "blink-182",
+      "title": "Dammit"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=kZs88WWGDoo",
+      "singer": "blink-182",
+      "title": "M+M's"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=s1tAYmMjLdY",
+      "singer": "blink-182",
+      "title": "I Miss You"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Zb5Sk5x24cs",
+      "singer": "blink-182",
+      "title": "Quarantine"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=9Ht5RZpzPqw",
+      "singer": "blink-182",
+      "title": "All The Small Things"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=k6cZO2DAhDw",
+      "singer": "blink-182",
+      "title": "Stockholm Syndrome"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=xTlNMmZKwpA",
+      "singer": "Cardi B",
+      "title": "I Like It"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=Ypgq0qdgVZA",
+      "singer": "David Bowie",
+      "title": "Fame"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0mHPrkhE_Tg",
+      "singer": "Demi Lovato",
+      "title": "Sorry Not Sorry"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5nLA-sTpSH0",
+      "singer": "Elton John",
+      "title": "Rocket Man"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=7QwUCR1NHpg",
+      "singer": "The Spinners",
+      "title": "The Rubberband Man"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sOiMD45QGLs",
+      "singer": "ado",
+      "title": "gira gira",
+      "addedBy": "CharlesKaup"
+    },
+    {
+      "url": "https://youtu.be/nUKgeAKTaXM",
+      "singer": "weird al yankovic",
+      "title": "ebay",
+      "addedBy": "CharlesKaup"
+    }
+  ]
 }
