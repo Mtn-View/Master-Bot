@@ -194,7 +194,7 @@ class TriviaPlayer {
           }
           // if user guessed only the singer
           else if (guess.includes(singer)) {
-            if (songSingerFound) return; // already been found
+            if (songSingerFound) return msg.react('🐌'); // already been found
             songSingerFound = true;
             if (songNameFound && songSingerFound) {
               this.score.set(
@@ -213,7 +213,7 @@ class TriviaPlayer {
           }
           // if user guessed song name
           else if (guess.includes(title)) {
-            if (songNameFound) return; // if song name has already been found
+            if (songNameFound) return msg.react('🐌'); // if song name has already been found
             songNameFound = true;
 
             if (songNameFound && songSingerFound) {
