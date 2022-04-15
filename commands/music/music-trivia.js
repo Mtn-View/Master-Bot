@@ -111,7 +111,7 @@ async function startMusicTrivia(interaction) {
     }
 
     const numberOfSongs = interaction.options.get('length')
-      ? interaction.options.get('length').value
+      ? parseInt(interaction.options.get('length').value)
       : 5;
 
     const videoDataArray = getSongArray();
